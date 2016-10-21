@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset = "utf-8">
+    <title>Ankieta</title>
+  </head>
+
+  <body>
+    <table>
+        <tr>
+            <th><a href = 'index.html'>Strona główna</a></th>
+            <th><a href = 'przepisy.html'>Przepisy</a></th>
+            <th><a href = 'historia.html'>Historia</a></th>
+            <th><a href = 'ankieta.html'>Ankieta</a></th>
+        </tr>
+    </table>
+
+
+  <h1>Ankieta dla fanów słodyczy</h1>
+  <p>Witaj drogi czytelniku! Chcialibyśmy poznać bliżej Twoje słodkie zainteresowania dlatego ładnie prosimy o wypełnienie ankiety <3</p>
+  
+  <form method="post" action="http://www.fajnaencyklopediaslodyczy.pl">
+    <p><label>Imię:
+      <input name ="name" type = "text" size="25">
+    </label></p>  
+    <p><label>Nick:
+      <input name ="nick" type = "text" size="25">
+    </label></p>  
+   <p><label>Twoja opinia na temat lizaków o smaku czekolady:
+      <input name ="lolipop_opinion" type = "text" size="100">
+    </label></p>  
+    <p><label>Ulubiony rodzaj czekolady:
+      <select name="chocolate">
+        <option>Gorzka</option>
+        <option>Mleczna</option>
+        <option>Deserowa</option>
+        <option>Biała</option>
+        <option>Nie mogę jeść czekolady z powodów medycznych</option>
+        <option>Nie lubię w ogóle czekolady</option>
+      </select>
+    </label></p>
+     <p><strong>Które cukierki z Mieszanki Krakowskiej lubisz?</strong>
+      <label>Pomarańczowe<input name="mieszanka_krakowska" type="checkbox" value="orange"></label>
+      <label>Ananasowe<input name="mieszanka_krakowska" type="checkbox" value="pineapple"></label>
+      <label>Cytrynowe<input name="mieszanka_krakowska" type="checkbox" value="lemon"></label>
+      <label>Malinowe<input name="mieszanka_krakowska" type="checkbox" value="raspberry"></label>
+    </p>
+    <p><strong>Gdybyś miał wybrać jedną markę spośród wymienionych to co byś wybrał</strong>
+      <label>Wedel<input name="marka_czekolady" type="radio" value="wedel"></label>
+      <label>Wawel<input name="marka_czekolady" type="radio" value="wawel"></label>
+      <label>Goplana<input name="marka_czekolady" type="radio" value="goplana"></label>
+      <label>Biedronka<input name="marka_czekolady" type="radio" value="biedronka"></label>
+    </p>
+    <p><label>Masz coś jeszcze do dodania? Nie krępuj się :)
+      <textarea name="more" rows="5" cols="50">Naprawdę możesz się z nami tym podzielić :D</textarea> 
+    </label></p>
+    <p>
+      <input type="submit" value ="Wyślij">
+      <input type="reset" value ="Resetuj">
+    </p>
+
+  </form>
+
+  </body>
+
+</html>
+
