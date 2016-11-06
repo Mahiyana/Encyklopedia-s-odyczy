@@ -28,7 +28,7 @@
 		Imię:<br><input name="name" type="text" autofocus><br>
 		Nazwisko: <br><input name="surname" type="text" required><br>
 		<br>
-		Miesiąc urodzin:<br><input name="month" list="months" pattern= autocomplete="off">
+		Miesiąc urodzin:<br><input name="month" list="months" autocomplete="off">
 		<datalist id="months">
 			<option value="Styczeń">
 			<option value="Luty">
@@ -44,7 +44,7 @@
 			<option value="Grudzień">
 		</datalist><br>
 		Adres mailowy:<br><input name="mail" type="email" required><br>
-		Telefon:<br><input name="phone" type="phone" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{3}" title="XXX-XXX-XXX" autocomplete="off"><br>
+		Telefon:<br><input name="phone" type="tel" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{3}" title="XXX-XXX-XXX" autocomplete="off"><br>
 		<br>
 	<input type="submit">
 	</form>
