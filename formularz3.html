@@ -25,10 +25,10 @@
 	<h2>Formularz osobowy</h2>
 	
 	<form method="post" action="http://www.fajnaencyklopediaslodyczy.pl" autocomplete="on">
-		Imię:<br><input name="name" type="text" placeholder="Twoje imię" autofocus><br>
-		Nazwisko: <br><input name="surname" type="text" placeholder="Twoje nazwisko" required><br>
+		Imię:<br><input name="name" type="text" autofocus><br>
+		Nazwisko: <br><input name="surname" type="text" required><br>
 		<br>
-		Miesiąc urodzin:<br><input name="month" list="months" placeholder="Twój miesiąc urodzin" autocomplete="off">
+		Miesiąc urodzin:<br><input name="month" list="months" autocomplete="off">
 		<datalist id="months">
 			<option value="Styczeń">
 			<option value="Luty">
@@ -43,8 +43,8 @@
 			<option value="Listopad">
 			<option value="Grudzień">
 		</datalist><br>
-		Adres mailowy:<br><input name="mail" type="email" placeholder="Twój adres mailowy" required> email@poczta.pl<br>
-		Telefon:<br><input name="phone" type="tel" placeholder="Twój numer telefonu" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{3}" title="XXX-XXX-XXX" autocomplete="off"> XXX-XXX-XXX<br>
+		Adres mailowy:<br><input name="mail" type="email" required> email@poczta.pl<br>
+		Telefon:<br><input name="phone" type="tel" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{3}" title="XXX-XXX-XXX" autocomplete="off"> XXX-XXX-XXX<br>
 		<br>
 	<input type="submit">
 	</form>
