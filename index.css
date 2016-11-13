@@ -29,3 +29,15 @@ li:first-child{
 li:last-child{
   font-weight: bold;
 }
+
+a:link{
+  color: hotpink;
+}
+
+a:visited{
+  color: pink;
+}
+
+a:active{
+  font-size: 200px;
+}
