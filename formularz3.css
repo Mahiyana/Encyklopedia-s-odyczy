@@ -21,3 +21,11 @@ div.absolute
 	top: 100px;
 	left: 200px;
 }
+
+input:focus{
+  background: red;
+}
+
+input:hover{
+  background: pink;
+}
