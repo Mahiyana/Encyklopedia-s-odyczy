@@ -21,3 +21,11 @@ body {
         background-color: pink;
      }
 }
+
+li:first-child{
+  text-decoration: underline;
+}
+
+li:last-child{
+  font-weight: bold;
+}
