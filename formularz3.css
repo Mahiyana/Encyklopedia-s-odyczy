@@ -1,0 +1,23 @@
+body
+{
+	background-image: url("logo.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right top;
+	background-color: #b3d9ff;
+}
+#form
+{
+	color: navy;
+}
+div.absolute
+{
+	background-color: white;
+	width: 400px;
+	border: 10px solid navy;
+	padding: 10px;
+	margin: 10px;
+	position: absolute;
+	top: 100px;
+	left: 200px;
+}

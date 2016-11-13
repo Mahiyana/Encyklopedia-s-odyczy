@@ -1,0 +1,13 @@
+.special
+{
+	font-size: 20pt;
+	line-height: 300%;
+	}
+body
+{
+	background-image: url("logo.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right top;
+	background-color: #b3d9ff;
+}
