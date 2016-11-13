@@ -11,3 +11,19 @@ body
 	background-position: right top;
 	background-color: #b3d9ff;
 }
+
+input[type=url]{
+  width: 50%;
+  color: red;
+}
+
+input[type=search]{
+  width: 80%;
+  height: 100px;
+  color: red;
+}
+
+input[type=submit]{
+  color: red;
+  text-decoration: underline;
+}
