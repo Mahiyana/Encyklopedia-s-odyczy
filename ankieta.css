@@ -25,3 +25,9 @@
 .par7{
   font-family:Arial, Helvetica, sans-serif;;
 }
+
+form{
+   border-style: dotted;
+   border-width: 10px;
+   border-color: pink;
+}
