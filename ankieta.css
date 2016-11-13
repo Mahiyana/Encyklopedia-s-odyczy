@@ -1,0 +1,27 @@
+.par1{
+  font-weight:bolder;
+}
+
+.par2{
+  font-style:italic;
+}
+
+.par3{
+  font-style:oblique;
+}
+
+.par4{
+  font-variant:small-caps;
+}
+
+.par5{
+  font-size:70%;
+}
+
+.par6{
+  line-height:10%;
+}
+
+.par7{
+  font-family:Arial, Helvetica, sans-serif;;
+}
