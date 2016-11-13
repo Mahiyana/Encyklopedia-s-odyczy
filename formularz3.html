@@ -14,6 +14,17 @@
 						background-position: right top;
 						background-color: #b3d9ff;}
 		#form		{	color: navy;}
+		div.absolute
+		{
+			background-color: white;
+			width: 400px;
+			border: 10px solid navy;
+			padding: 10px;
+			margin: 10px;
+			position: absolute;
+			top: 100px;
+			left: 200px;
+		}
 	</style>
   </head>
 
@@ -34,6 +45,7 @@
 	
 	<h2>Formularz osobowy</h2>
 	
+	<div class="absolute">
 	<form method="post" action="http://www.fajnaencyklopediaslodyczy.pl" autocomplete="on" id="form">
 		Imię:<br><input name="name" type="text" autofocus><br>
 		Nazwisko: <br><input name="surname" type="text" required><br>
@@ -58,6 +70,7 @@
 		<br>
 	<input type="submit">
 	</form>
+	</div>
   
   </body>
 
