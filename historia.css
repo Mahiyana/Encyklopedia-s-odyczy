@@ -23,12 +23,12 @@
 
 .lefty{
   padding : 10px;
-  background-color: blue;
+  background-color: #d1d1ff;
 }
 
 .righty{
   text-align : right;
-  background-color: red;
+  background-color: #ffd1f0;
   height: 100px;
   vertical-align: bottom;
 }
