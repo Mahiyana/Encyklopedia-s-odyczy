@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset = "utf-8">
+	<meta name = "author" content = "Maja & Róża">
+	<meta name = "description" content = "Zadanie 3 z listy HTML2">
+    <title>Formularz osobowy</title>
+	<link rel="stylesheet" type="text/css" href="formularz3.css">
+	<style type = "text/css">
+	body
+	{	
+		background-image: url("logo.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: right top;
+		background-color: #b3d9ff;
+	}
+	</style>
+  </head>
+
+  <body>
+  
+   <nav>
+      <table>
+          <tr>
+              <th><a href = 'index.html'>Strona główna</a></th>
+              <th><a href = 'przepisy.html'>Przepisy</a></th>
+              <th><a href = 'historia.html'>Historia</a></th>
+              <th><a href = 'ankieta.html'>Ankieta</a></th>
+      		<th><a href = 'mailto:ourmail@mail.com'>Napisz do nas!</a></th>
+          </tr>
+      </table>
+    </nav> 
+	
+	
+	<h2 style = "font-size: 25pt; color: navy;">Formularz osobowy</h2>
+	
+	<div class="absolute">
+	<form method="post" action="http://www.fajnaencyklopediaslodyczy.pl" autocomplete="on" id="form">
+		Imię:<br><input name="name" type="text" autofocus><br>
+		Nazwisko: <br><input name="surname" type="text" required><br>
+		<br>
+		Miesiąc urodzin:<br><input name="month" list="months" autocomplete="off">
+		<datalist id="months">
+			<option value="Styczeń">
+			<option value="Luty">
+			<option value="Marzec">
+			<option value="Kwiecień">
+			<option value="Maj">
+			<option value="Czerwiec">
+			<option value="Liepiec">
+			<option value="Sierpień">
+			<option value="Wrzesień">
+			<option value="Październik">
+			<option value="Listopad">
+			<option value="Grudzień">
+		</datalist><br>
+		Adres mailowy:<br><input name="mail" type="email" required> email@poczta.pl<br>
+		Telefon:<br><input name="phone" type="tel" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{3}" title="XXX-XXX-XXX" autocomplete="off"> XXX-XXX-XXX<br>
+		<br>
+	<input type="submit">
+	</form>
+	</div>
+  
+  </body>
+
+</html>
+

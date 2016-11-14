@@ -1,0 +1,23 @@
+#form
+{
+	color: navy;
+}
+div.absolute
+{
+	background-color: white;
+	width: 400px;
+	border: 10px solid navy;
+	padding: 10px;
+	margin: 10px;
+	position: absolute;
+	top: 100px;
+	left: 200px;
+}
+
+input:focus{
+  background: red;
+}
+
+input:hover{
+  background: pink;
+}

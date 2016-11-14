@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset = "utf-8">
+	<meta name = "author" content = "Maja & Róża">
+	<meta name = "description" content = "Zadanie 4 z listy HTML2">
+    <title>Śmieszne pola do wypełnienia</title>
+	<link rel="stylesheet" type="text/css" href="formularz2.css">
+  </head>
+
+  <body>
+  
+   <nav>
+      <table>
+          <tr>
+              <th><a href = 'index.html'>Strona główna</a></th>
+              <th><a href = 'przepisy.html'>Przepisy</a></th>
+              <th><a href = 'historia.html'>Historia</a></th>
+              <th><a href = 'ankieta.html'>Ankieta</a></th>
+      		<th><a href = 'mailto:ourmail@mail.com'>Napisz do nas!</a></th>
+          </tr>
+      </table>
+    </nav> 
+	
+	
+	<h2 class="special">Formularz nieosobowy</h2>
+   
+    <form method="post" action="http://www.fajnaencyklopediaslodyczy.pl" autocomplete="on">
+      <p>
+        <label>Ulubiony kolor cukierków:
+          <input type = 'color' value ='#F92359' autofocus />
+        </label>
+      </p>
+      <p>
+        <label>Najlepszy zdbiór jabłek Antonówka odbył się:
+          <input type='month'/>
+        </label>
+      </p>
+      <p>
+        <label>W skali 1 do 10 jak oceniasz Merci z marcepanem:
+          <input type='range'/>
+        </label>
+      </p>
+      <p>
+        <label>Ulubiona strona na temat szerokopojętego cukiernictwa i słodyczy:
+          <input type='url' placeholder='http://www.fajnaencyklopediaslodyczy.pl'/>
+        </label>
+      </p>
+      <p>
+        <label>Tu wpisz po prostu 'cel życia'
+          <input type='search' placeholder='serio'/>
+        </label>
+      </p>
+
+ 	<input type="submit">
+    </form>
+  </body>
+</html>  
