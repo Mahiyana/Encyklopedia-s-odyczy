@@ -5,6 +5,7 @@ body
 h1
 {
 	background-color: #ffadf6;
+	border-left: 6px solid #cc00b4;
 }
 
 a:link{
