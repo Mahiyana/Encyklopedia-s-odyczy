@@ -8,6 +8,14 @@ h1
 	border-left: 6px solid #cc00b4;
 }
 
+h2
+{
+	background-color: #ffadf6;
+	border-left: 6px solid #cc00b4;
+	left: 20px;
+	position: relative;
+}
+
 a:link
 {
   color: hotpink;
