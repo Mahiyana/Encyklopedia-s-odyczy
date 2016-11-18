@@ -6,10 +6,35 @@ body
 div.relative
 {
 	background-color: white;
-	width: 300px;
+	width: 1000px;
 	border: 10px solid #ffadf6;
 	padding: 10px;
 	margin: 5px;
 	position: relative;
 	left: 30px;
+}
+#ingredients
+{
+	border-collapse: collapse;
+	position: relative;
+	left: 30px;
+}
+
+#ingredients td, #ingredients th
+{
+	border: 1px solid #ffadf6;
+	width: 250px;
+	text-align: left;
+}
+#ingredients td
+{
+	background-color: white;
+}
+#ingredients th
+{
+	background-color: #ffadf6;
+}
+#ingredients td:hover
+{
+	background-color: #ffc6f9;
 }
