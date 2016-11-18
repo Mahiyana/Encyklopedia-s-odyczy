@@ -7,25 +7,40 @@
 	<meta name = "author" content = "Maja & Róża">
 	<meta name = "description" content = "Strona główna Encyklopedii Słodyczy">
     <title>Strona główna</title>
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/layout.css">
   </head>
   
   <body>
-    <nav>
-      <table>
-          <tr>
-              <th><a href = 'index.html'>Strona główna</a></th>
-              <th><a href = 'przepisy.html'>Przepisy</a></th>
-              <th><a href = 'historia.html'>Historia</a></th>
-          </tr>
-      </table>
-    </nav> 
-
-
+    <div id='background' class='absolute'>
+	<div id='menu_header' class='absolute'>
+	<nav>
+	<p id='title'> Encyklopedia Słodyczy</p>
+		<table id='menu_header_table'>
+			<tr>
+				<td><a href = 'index.html'>Strona główna</a></td>
+				<td><a href = 'przepisy.html'>Przepisy</a></td>
+				<td><a href = 'historia.html'>Historia</a></td>
+			</tr>
+		</table>
+    </nav>
+	</div>
+	<div id="menu_list" class='absolute'>
+	<table id='menu_list_table'>
+		<tr>
+			<td>slodycz1</td>
+		</tr>
+		<tr>
+			<td>slodycz2</td>
+		</tr>
+		<tr>
+			<td>slodycz3</td>
+		</tr>
+	</table>
+	</div>
+	<div id="contents_plain" class='absolute'>
 	<h1 id='powitanie'>Witaj w naszej Encyklopedii Słodyczy</h1>
     <p>Tutaj będzie encyklopedia słodyczy. I będzie ona przepyszna!</p>
 
-    
     <form method='post' action="nie_ma.html">
       Szukaj na stronie:
         <input type="search" name="szukaj">
@@ -93,6 +108,8 @@
         </div>  
       </div>  
     </div>
-  </body>
+	</div>
+	</div>
+	</body>
 
 </html>

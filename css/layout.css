@@ -101,6 +101,31 @@ a:visited
 	left: 17%;
 	top: 20%;
 }
+
+#contents_star
+{
+	width: 83%;
+	height: 129%;
+	padding: 10px;
+	position: absolute;
+	border: 5px solid #ffadf6;
+	background-image: url("../pictures/star.jpg");
+	left: 17%;
+	top: 20%;
+}
+
+#contents_plain
+{
+	width: 83%;
+	height: 129%;
+	padding: 10px;
+	position: absolute;
+	border: 5px solid #ffadf6;
+	background-color: #ffe6fc;
+	left: 17%;
+	top: 20%;
+}
+
 #background
 {
 	width: 100%;
