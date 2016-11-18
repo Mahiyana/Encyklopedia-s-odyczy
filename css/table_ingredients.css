@@ -1,0 +1,10 @@
+div.relative
+{
+	background-color: white;
+	width: 300px;
+	border: 10px solid #ffadf6;
+	padding: 10px;
+	margin: 5px;
+	position: relative;
+	left: 30px;
+}
