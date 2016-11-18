@@ -2,8 +2,7 @@ body
 {
 	background-image: url("../pictures/rhombus.jpg");
 }
-
-div.relative
+#prepare
 {
 	background-color: white;
 	width: 1000px;

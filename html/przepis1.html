@@ -9,9 +9,11 @@
 		<title>Babeczki z malinami</title>
 		<link rel="stylesheet" type="text/css" href="../css/main.css">
 		<link rel="stylesheet" type="text/css" href="../css/recipe.css">
+		<link rel="stylesheet" type="text/css" href="../css/layout.css">
 	</head>
 
 	<body>
+	<div id='background' class='absolute'>
 	<nav>
 		<table>
 			<tr>
@@ -20,7 +22,12 @@
 				<th><a href = 'historia.html'>Historia</a></th>
 			</tr>
 		</table>
-    </nav> 
+    </nav>
+	<div id="menu_list" class='absolute'>
+	<p>link_przepis1</p>
+	<p>link_przepis2</p>
+	</div>
+	<div id="contents" class='absolute'>
     <article>
 		<h1>Babeczki z malinami</h1>
 		<p>Trudność przepisu:
@@ -60,7 +67,7 @@
 		<br/><br/>
 		<section id = 'preparing'>
 			<h3>Przygotowanie</h3>
-			<div class="relative">
+			<div id='prepare' class="relative">
 			<ol>
 				<li>Zmieszaj wszystkie składniki, poza malinami w misce</li>
 				<li>Powstałą mieszanką wypełnij papilotki do babeczek, mniej więcej do &frac34; wysokości</li>
@@ -73,6 +80,8 @@
 
 		<img src='../pictures/babeczki_malinowe.jpg' alt='Zdjęcie do przepisu na babeczki malinowe'>
     </article>
+	</div>
+	</div>
 	</body>
 
 </html>
