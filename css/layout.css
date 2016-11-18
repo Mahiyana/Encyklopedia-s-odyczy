@@ -22,6 +22,28 @@
 	left: 0px;
 	top: 20%;
 }
+
+#menu_list_table
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#menu_list_table td
+{
+	height: 25px;
+}
+
+#menu_list_table tr:nth-child(even)
+{
+	background-color: #ffe6fc;
+}
+
+#menu_list_table tr:hover
+{
+	background-color: #ffc6f9;
+}
+
 #contents_rhombus
 {
 	width: 83%;
