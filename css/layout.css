@@ -13,7 +13,7 @@ h2
 	background-color: #ffadf6;
 	border-left: 6px solid #cc00b4;
 	left: 20px;
-	width: 800px;
+	width: 90%;
 	position: relative;
 }
 
@@ -147,6 +147,19 @@ a:visited
 	position: absolute;
 	left: 0px;
 	top: 0px;
+}
+
+#contents_box
+{
+	background-color: white;
+	width: 85%;
+	border: 5px solid #ffadf6;
+	box-shadow: 5px 5px 5px #ffc6f9;
+	border-radius: 25px;
+	padding: 10px;
+	margin: 5px;
+	position: relative;
+	left: 20px;
 }
 
 @keyframes menu_header_background_animation
