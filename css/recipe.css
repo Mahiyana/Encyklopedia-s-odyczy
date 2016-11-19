@@ -2,17 +2,18 @@
 {
 	background-color: white;
 	width: 1000px;
-	border: 10px solid #ffadf6;
+	border: 5px solid #ffadf6;
+	border-radius: 25px;
 	padding: 10px;
 	margin: 5px;
 	position: relative;
-	left: 30px;
+	left: 20px;
 }
 #ingredients
 {
 	border-collapse: collapse;
 	position: relative;
-	left: 30px;
+	left: 20px;
 }
 
 #ingredients td, #ingredients th
