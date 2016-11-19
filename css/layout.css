@@ -35,7 +35,8 @@ a:visited
 
 #menu_header
 {
-	background-color: hsl(310, 100%, 97%);
+	background: hsl(310, 100%, 97%);
+	background: linear-gradient(to bottom right, white, hotpink);
 	width: 97%;
 	height: 164px;
 	left: 0px;
