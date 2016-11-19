@@ -30,11 +30,12 @@ a:visited
 #title
 {
 	font-size: 40px;
+	text-shadow:5px 5px 10px #cc00b4;
 }
 
 #menu_header
 {
-	background-color: white;
+	background-color: hsl(310, 100%, 97%);
 	width: 97%;
 	height: 164px;
 	left: 0px;
