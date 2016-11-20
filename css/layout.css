@@ -43,7 +43,6 @@ a:visited
 	top: 0px;
 	padding: 10px;
 	border: 5px solid #ffadf6;
-	position: absolute;
 	animation-name: menu_header_background_animation;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
@@ -78,10 +77,11 @@ a:visited
 	height: 130%;
 	border: 5px solid #ffadf6;
 	padding: 5px;
-	position: absolute;
 	left: 0px;
 	top: 194px;
 }
+
+
 
 #menu_list_table
 {
@@ -102,6 +102,11 @@ a:visited
 #menu_list_table tr:hover
 {
 	background-color: #ffc6f9;
+}
+
+.box
+{
+  display: flex
 }
 
 .contents_rhombus
@@ -130,10 +135,9 @@ a:visited
 
 .contents_plain
 {
-	width: 78%;
-	height: 129%;
+	flex-grow: 1;
+    height: 129%;
 	padding: 10px;
-	position: absolute;
 	border: 5px solid #ffadf6;
 	background-color: #ffe6fc;
 	left: 257px;
