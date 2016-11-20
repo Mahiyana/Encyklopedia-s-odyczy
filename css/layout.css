@@ -260,10 +260,8 @@ a:visited
 }
 
 .image_rotate {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 600px;
+  float: right;
+  width: 100px;
   -webkit-transition: 1s linear;
   transition: 1s linear;
 }
