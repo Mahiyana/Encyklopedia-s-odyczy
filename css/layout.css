@@ -50,12 +50,12 @@ a:visited
 #menu_header_table
 {
 	border-collapse: collapse;
+	position:absolute;
+	top: 140px;
 }
 
 #menu_header_table tr
 {
-	position:absolute;
-	top: 140px;
 	height: 40px;
 	background-color: #ffe6fc;
 }
