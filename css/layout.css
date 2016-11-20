@@ -81,7 +81,12 @@ a:visited
 	top: 194px;
 }
 
-
+@media screen and (max-width: 600px) 
+{
+    #menu_list {
+           display: none;
+                }
+}
 
 #menu_list_table
 {
