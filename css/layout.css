@@ -237,6 +237,14 @@ a:visited
 	100%   {background: linear-gradient(to bottom right, hsl(330, 100%, 100%), hsl(330, 100%, 70%));}
 }
 
+.border_image{
+  border: 15px solid transparent;
+  padding: 15px;
+  border-image-source: url(../pictures/serduszko.png);
+  border-image-repeat: round;
+  border-image-slice: 30;
+}
+
 .crossfading {
   position:relative;
   height:245px;
