@@ -227,3 +227,46 @@ a:visited
 	99,5%   {background: linear-gradient(to bottom right, hsl(330, 100%, 99%), hsl(330, 100%, 71%));}
 	100%   {background: linear-gradient(to bottom right, hsl(330, 100%, 100%), hsl(330, 100%, 70%));}
 }
+
+.crossfading {
+  position:relative;
+  height:245px;
+  width:326px;
+  margin:0 auto;
+}
+
+.crossfading img {
+  position:absolute;
+  left:0;
+  transition: opacity 1s ease-in-out;
+}
+
+.crossfading img.image_top:hover {
+  opacity:0;
+}
+
+.image_rotate:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.image_rotate {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+.image_move:hover {
+  -webkit-transform: translateX(1000px);
+  transform: translateX(1000px);
+
+}
+
+.image_move {
+  width: 100px;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
