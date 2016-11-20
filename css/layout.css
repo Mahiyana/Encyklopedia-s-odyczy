@@ -270,3 +270,7 @@ a:visited
   -webkit-transition: 1s linear;
   transition: 1s linear;
 }
+
+h1[id="powitanie"]{
+   font-family: 'Ravi Prakash', cursive;
+}
