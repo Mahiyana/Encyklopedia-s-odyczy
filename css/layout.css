@@ -39,8 +39,8 @@ a:visited
 
 #menu_header
 {
-	width: 99%;
-	position:absolute;
+	width: 80%;
+	position:relative;
 	background: linear-gradient(to bottom right, hsl(330, 100%, 100%), hsl(330, 100%, 70%));
 	height: 164px;
 	left: 0px;
@@ -75,14 +75,15 @@ a:visited
 
 #menu_list
 {
-	position: absolute;
+	position: relative;
+	align: left;
 	background-color: white;
 	width: 230px;
 	height: 130%;
 	border: 5px solid #ffadf6;
 	padding: 5px;
 	left: 0px;
-	top: 194px;
+	top: 0px;
 	animation-name: menu_list_background_animation;
 	animation-duration: 30s;
 	animation-iteration-count: infinite;
@@ -128,38 +129,40 @@ a:visited
 
 .contents_rhombus
 {
-	flex-grow: 1;
+	flex-grow: 3;
+	align: right;
 	height: 129%;
 	padding: 10px;
-	position: absolute;
+	position: relative;
+	left: 0px;
 	border: 5px solid #ffadf6;
 	background-image: url("../pictures/rhombus.jpg");
-	left: 257px;
-	top: 194px;
 }
 
 .contents_star
 {
-	flex-grow: 1;
+	flex-grow: 3;
+	align: right;
 	height: 129%;
 	padding: 10px;
-	position: absolute;
+	position: relative;
 	border: 5px solid #ffadf6;
 	background-image: url("../pictures/star.jpg");
-	left: 257px;
-	top: 194px;
+	left: 0px;
+	top: 0px;
 }
 
 .contents_plain
 {
-	width:75%;
-	position:absolute;
+	flex-grow: 3;
+	align: right;
     height: 129%;
 	padding: 10px;
+	position: relative;
 	border: 5px solid #ffadf6;
 	background-color: #ffe6fc;
-	left: 257px;
-	top: 194px;
+	left: 0px;
+	top: 0px;
 }
 
 .background
