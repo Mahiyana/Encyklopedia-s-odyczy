@@ -39,7 +39,7 @@ a:visited
 
 #menu_header
 {
-	width: 80%;
+	width: 1000px;
 	position:relative;
 	background: linear-gradient(to bottom right, hsl(330, 100%, 100%), hsl(330, 100%, 70%));
 	height: 164px;
