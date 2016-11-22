@@ -9,9 +9,10 @@
     <title>Strona główna</title>
 	<link rel="stylesheet" type="text/css" href="../css/layout.css">
     <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet"> 
-  </head>
+    <script language="javascript" src="../javascript/script.js"></script> 
+ </head>
   
-  <body>
+  <body onload = "powitaj()">
     <div class='background'>
 	<div id='menu_header' class='absolute'>
 	<nav>
@@ -113,7 +114,7 @@
 	<div class="contents_plain">
     <img src='../pictures/pralinka.png'  class='image_rotate' alt='Przykład samotnej pralinki'><h1 id='powitanie'>Witaj w naszej Encyklopedii Słodyczy</h1>
     <p>Tutaj będzie encyklopedia słodyczy. I będzie ona przepyszna!</p>
-
+    <h1 id="welcome">Moje H1</h1>
     <form method='post' action="nie_ma.html">
       Szukaj na stronie:
         <input type="search" name="szukaj">
