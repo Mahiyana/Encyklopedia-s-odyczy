@@ -9,10 +9,11 @@
     <title>Strona główna</title>
 	<link rel="stylesheet" type="text/css" href="../css/layout.css">
     <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet"> 
-    <script language="javascript" src="../javascript/welcome.js"></script> 
+    <script type="application/javascript" src="../javascript/welcome.js"></script> 
+    <script type="application/javascript" src="../javascript/weekday.js"></script>
  </head>
   
-  <body onload = "powitaj()">
+  <body onload = "powitaj(); weekday();">
     <div class='background'>
 	<div id='menu_header' class='absolute'>
 	<nav>
@@ -120,6 +121,7 @@
         <input type="search" name="szukaj">
         <input type="submit">
     </form>
+    <p id='dzien'>:)</p>
        
 	</div>
 	</div>
