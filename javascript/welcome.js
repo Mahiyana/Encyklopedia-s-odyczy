@@ -4,6 +4,12 @@ if(name == "Bartuś" || name == "Bartek" || name == "Bartosz" || name == "Bartł
   window.alert("Redakcja Encyklopedii słodyczy serdecznie wita wszystkich Bartusiów <3");
 }
 function powitaj(){
-  document.getElementById('welcome').innerHTML = "Witaj " + name + "! Słodkiego dnia <3";
+  console.log(name);
+  if(String(name) == 'null'){
+    document.getElementById('welcome').innerHTML = "Witaj Tajemniczy Nieznajomy! Słodkiego dnia <3";
+  }
+  else{
+    document.getElementById('welcome').innerHTML = "Witaj " + name + "! Słodkiego dnia <3";
+  }
 }
 
