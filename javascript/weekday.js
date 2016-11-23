@@ -1,7 +1,7 @@
  function weekday(){
   switch (new Date().getDay()) {
       case 0:
-          day = "niedziela";
+          day = "niedzielę";
           break;
       case 1:
           day = "poniedziałek";
@@ -10,7 +10,7 @@
           day = "wtorek";
           break;
       case 3:
-          day = "środa";
+          day = "środę";
           break;
       case 4:
           day = "czwartek";
@@ -19,7 +19,7 @@
           day = "piątek";
           break;
       case  6:
-          day = "sobota";
+          day = "sobotę";
           break;
     }
     document.getElementById('dzien').innerHTML = "Dziś mamy " + day +"!";
