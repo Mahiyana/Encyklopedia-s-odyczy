@@ -1,4 +1,5 @@
  function weekday(){
+      var day;
   switch (new Date().getDay()) {
       case 0:
           day = "niedzielę";
