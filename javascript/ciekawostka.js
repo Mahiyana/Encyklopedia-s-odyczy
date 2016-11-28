@@ -1,5 +1,6 @@
 function knowMore(){
   var rand = Math.floor(Math.random()*10);
+  var know;
   
   switch (rand) {
       case 0:
