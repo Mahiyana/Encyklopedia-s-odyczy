@@ -1,11 +1,7 @@
-function ciekawostka_ctrl()
+function ciekawostka_ctrl(event)
 {
-	document.getElementById('ciekawostka').addEventListener("click",ctrlCiekawostka)
-	function ctrlCiekawostka(event)
+	if (event.ctrlKey)
 	{
-		if (event.ctrlKey)
-		{
-			knowMore();
-		}
+		knowMore();
 	}
 }
