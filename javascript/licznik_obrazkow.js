@@ -1,7 +1,5 @@
 function counter(){
   var num = document.images.length;
-  console.log(typeof(num));
-  console.log(num);
   var text = ":)";
 
   switch (num){
