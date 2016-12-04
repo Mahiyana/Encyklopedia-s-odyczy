@@ -13,9 +13,10 @@
 	<script type="application/javascript" src="../javascript/licznik_formularzy.js"></script>
 	<script type="application/javascript" src="../javascript/focus_ankietowy.js"></script>
 	<script type="application/javascript" src="../javascript/reset_form.js"></script>
+	<script type="application/javascript" src="../javascript/send_form.js"></script>
  </head>
   
-  <body onload = "form_counter(); focusuj(); reset_form()">
+  <body onload = "form_counter(); focusuj(); reset_form(); send_form()">
     <div class='background'>
 	<div id='menu_header' class='absolute'>
 	<nav>
@@ -167,7 +168,7 @@
     </section>
     <section id = '5'>
       <p>
-        <input type="submit" value ="Wyślij">
+        <button id="send_button">Wyślij</button>
         <button id="reset_button">Resetuj</button>
       </p>
     </section>  
