@@ -9,9 +9,10 @@
     <title>Czekolada</title>
 	<link rel="stylesheet" type="text/css" href="../css/layout.css">
 	<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+    <script type="application/javascript" src="../javascript/licznik_obrazkow.js"></script> 
   </head>
   
-  <body>
+  <body onload="counter()">
     <div class='background'>
 	<div id='menu_header' class='absolute'>
 	<nav>
@@ -115,6 +116,7 @@
 	<h1>Rurki</h1>
 	<div class='contents_box'>
     Ciasto zwinięte w rurkę wypełnione czymś dobrym. Żadnej filozofii.
+    <p id="img_count"></p>
     </div>
 	</article>
     </div>
