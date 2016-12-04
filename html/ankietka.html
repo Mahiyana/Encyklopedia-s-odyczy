@@ -12,9 +12,10 @@
 	<script type="application/javascript" src="../javascript/index_menu_list_mouse_movement.js"></script>
 	<script type="application/javascript" src="../javascript/licznik_formularzy.js"></script>
 	<script type="application/javascript" src="../javascript/focus_ankietowy.js"></script>
+	<script type="application/javascript" src="../javascript/reset_form.js"></script>
  </head>
   
-  <body onload = "form_counter(); focusuj();">
+  <body onload = "form_counter(); focusuj(); reset_form()">
     <div class='background'>
 	<div id='menu_header' class='absolute'>
 	<nav>
@@ -119,7 +120,7 @@
       <p>Witaj drogi czytelniku! Chcialibyśmy poznać bliżej Twoje słodkie zainteresowania dlatego ładnie prosimy o wypełnienie ankiety </p>
       <p id="form_count"></p>
 
-      <form method="post" action="http://www.fajnaencyklopediaslodyczy.pl">
+      <form method="post" action="ankietka.html" id="whole_form">
     <section id = '2'>
       <p><label>Imię:
         <input name ="name" type = "text" size="25">
@@ -167,7 +168,7 @@
     <section id = '5'>
       <p>
         <input type="submit" value ="Wyślij">
-        <input type="reset" value ="Resetuj">
+        <button id="reset_button">Resetuj</button>
       </p>
     </section>  
     </form>
