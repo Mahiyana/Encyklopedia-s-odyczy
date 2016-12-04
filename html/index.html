@@ -12,9 +12,10 @@
     <script type="application/javascript" src="../javascript/welcome.js"></script> 
     <script type="application/javascript" src="../javascript/weekday.js"></script>
 	<script type="application/javascript" src="../javascript/index_menu_list_mouse_movement.js"></script>
+	<script type="application/javascript" src="../javascript/licznik_linkow.js"></script>
  </head>
   
-  <body onload = "powitaj(); weekday();">
+  <body onload = "powitaj(); weekday(); link_counter();">
     <div class='background'>
 	<div id='menu_header' class='absolute'>
 	<nav>
@@ -122,6 +123,7 @@
         <input type="search" name="szukaj">
         <input type="submit">
     </form>
+    <p id='link_count'>:)</p>
     <p id='dzien'>:)</p>
        
 	</div>
