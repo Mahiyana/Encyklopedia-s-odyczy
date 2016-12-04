@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset = "utf-8">
+	<meta name = "author" content = "Maja & Róża">
+	<meta name = "description" content = "Strona główna Encyklopedii Słodyczy">
+    <title>Ankieta</title>
+	<link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet"> 
+	<script type="application/javascript" src="../javascript/index_menu_list_mouse_movement.js"></script>
+	<script type="application/javascript" src="../javascript/licznik_formularzy.js"></script>
+ </head>
+  
+  <body onload = "form_counter();">
+    <div class='background'>
+	<div id='menu_header' class='absolute'>
+	<nav>
+	<p id='title'> Encyklopedia Słodyczy</p>
+		<table id='menu_header_table'>
+			<tr>
+				<td><a href = 'index.html'>Strona główna</a></td>
+				<td><a href = 'recipes.html'>Przepisy</a></td>
+				<td><a href = 'history.html'>Historia</a></td>
+			</tr>
+		</table>
+    </nav>
+	</div>
+    <div class="box">
+	<div onmouseover='menu_mouseover()' onmouseout='menu_mouseout()' id="menu_list">
+	<table id='menu_list_table'>
+		<tr>
+			<td>
+				<details>
+				<summary><a href = 'sweet_chocolate.html'>Czekolada</a></summary>
+				<ul>
+				<li>Mleczna</li>
+				<li>Biała</li>
+				<li>Gorzka</li>
+				</ul>
+				</details>
+			</td>
+		</tr>
+		<tr>
+			<td><a href='karmel.html'>Karmel</a></td>
+		</tr>
+		<tr>
+			<td>
+				<details>
+				<summary><a href='lizaki.html'>Lizaki</a></summary>
+				<ul>
+				<li>Wodne</li>
+				<li>Mleczne</li>
+				</ul>
+				</details>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<details>
+				<summary><a href='lody.html'>Lody</a></summary>
+				<ul>
+				<li>Wodne</li>
+				<li>Mleczne</li>
+				</ul>
+				</details>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<details>
+				<summary><a href='ciastka.html'>Ciastka</a></summary>
+				<ul>
+				<li>Pszenne</li>
+				<li>Owsiane</li>
+				</ul>
+				</details>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<details>
+				<summary><a href='zelki.html'>Żelki</a></summary>
+				<ul>
+				<li>Zwykłe</li>
+				<li>Kwaśne</li>
+				<li>Z pianką mleczną</li>
+				</ul>
+				</details>
+			</td>
+		</tr>
+		<tr>
+			<td><a href='miod.html'>Miód</a></td>
+		</tr>
+		<tr>
+			<td><a href='cukier.html'>Cukier</a></td>
+		</tr>
+		<tr>
+			<td><a href='krowki.html'>Krówki</a></td>
+		</tr>
+		<tr>
+			<td>
+				<details>
+				<summary><a href='rurki.html'>Rurki</a></summary>
+				<ul>
+				<li>Z kremem</li>
+				<li>W czekoladzie</li>
+				</ul>
+				</details>
+			</td>
+		</tr>
+	</table>
+	</div>
+	<div class="contents_plain">
+       
+      <h1>Ankieta dla fanów słodyczy</h1>
+      <p>Witaj drogi czytelniku! Chcialibyśmy poznać bliżej Twoje słodkie zainteresowania dlatego ładnie prosimy o wypełnienie ankiety </p>
+      <p id="form_count"></p>
+
+      <form method="post" action="http://www.fajnaencyklopediaslodyczy.pl">
+    <section id = '2'>
+      <p><label>Imię:
+        <input name ="name" type = "text" size="25">
+      </label></p>  
+      <p><label>Nick:
+        <input name ="nick" type = "text" size="25">
+      </label></p>  
+    </section>
+    <section id = '3'>
+      <p><label>Twoja opinia na temat lizaków o smaku czekolady:
+        <input name ="lolipop_opinion" type = "text" size="100">
+      </label></p>
+      <p>Jeżeli pojęcie "lizak" jest ci obce, zapraszamy do <a href = "../html/lizaki.html">artykułu o lizakach</a></p>
+      <p><label>Ulubiony rodzaj czekolady:
+        <select name="chocolate">
+          <option>Gorzka</option>
+          <option>Mleczna</option>
+          <option>Deserowa</option>
+          <option>Biała</option>
+          <option>Nie mogę jeść czekolady z powodów medycznych</option>
+          <option>Nie lubię w ogóle czekolady</option>
+        </select>
+      </label></p>
+    </section>
+    <section id = '4'>
+	<section id = '4MK'>
+      <p><strong>Które cukierki z Mieszanki Krakowskiej lubisz?</strong>
+        <label>Pomarańczowe<input name="mieszanka_krakowska" type="checkbox" value="orange"></label>
+        <label>Ananasowe<input name="mieszanka_krakowska" type="checkbox" value="pineapple"></label>
+        <label>Cytrynowe<input name="mieszanka_krakowska" type="checkbox" value="lemon"></label>
+        <label>Malinowe<input name="mieszanka_krakowska" type="checkbox" value="raspberry"></label>
+      </p>
+	</section>
+	<section id = '4M'>
+      <p><strong>Gdybyś miał wybrać jedną markę spośród wymienionych to co byś wybrał</strong>
+        <label>Wedel<input name="marka_czekolady" type="radio" value="wedel"></label>
+        <label>Wawel<input name="marka_czekolady" type="radio" value="wawel"></label>
+        <label>Goplana<input name="marka_czekolady" type="radio" value="goplana"></label>
+        <label>Biedronka<input name="marka_czekolady" type="radio" value="biedronka"></label>
+      </p>
+	</section>
+      <p><label>Masz coś jeszcze do dodania? Nie krępuj się :)
+        <textarea name="more" rows="5" cols="50">Naprawdę możesz się z nami tym podzielić :D</textarea></label></p> 
+    </section>
+    <section id = '5'>
+      <p>
+        <input type="submit" value ="Wyślij">
+        <input type="reset" value ="Resetuj">
+      </p>
+    </section>  
+    </form>
+    </div>
+	</div>
+    </div>
+	</body>
+
+</html>
