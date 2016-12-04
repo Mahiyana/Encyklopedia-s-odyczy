@@ -91,6 +91,13 @@ a:visited
 	animation-iteration-count: infinite;
 }
 
+.help
+{
+  color: grey;
+  border: 5px solid hotpink;
+  display: none;
+}
+
 @media screen and (max-width: 600px) 
 {
     #menu_list {

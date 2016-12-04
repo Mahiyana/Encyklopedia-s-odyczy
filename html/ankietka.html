@@ -14,9 +14,10 @@
 	<script type="application/javascript" src="../javascript/focus_ankietowy.js"></script>
 	<script type="application/javascript" src="../javascript/reset_form.js"></script>
 	<script type="application/javascript" src="../javascript/send_form.js"></script>
+	<script type="application/javascript" src="../javascript/form_focus.js"></script>
  </head>
   
-  <body onload = "form_counter(); focusuj(); reset_form(); send_form()">
+  <body onload = "form_counter(); focusuj(); reset_form(); send_form(); give_focuses();">
     <div class='background'>
 	<div id='menu_header' class='absolute'>
 	<nav>
@@ -124,11 +125,11 @@
       <form method="post" action="ankietka.html" id="whole_form">
     <section id = '2'>
       <p><label>Imię:
-        <input name ="name" type = "text" size="25">
-      </label></p>  
+        <input name ="name" type = "text" size="25" id="name"> 
+      </label></p><div class="help" id="name_help">np. Jan Kowalski</div>
       <p><label>Nick:
-        <input name ="nick" type = "text" size="25">
-      </label></p>  
+        <input name ="nick" type = "text" size="25" id="nick">
+      </label></p> <div class="help" id="nick_help">np. SłodkaBabeczka</div> 
     </section>
     <section id = '3'>
       <p><label>Twoja opinia na temat lizaków o smaku czekolady:
@@ -164,7 +165,8 @@
       </p>
 	</section>
       <p><label>Masz coś jeszcze do dodania? Nie krępuj się :)
-        <textarea name="more" rows="5" cols="50">Naprawdę możesz się z nami tym podzielić :D</textarea></label></p> 
+        <textarea name="more" rows="5" cols="50" id="else"> </textarea></label></p>
+        <div class="help" id="else_help">Naprawdę możesz się z nami tym podzielić :D</div>
     </section>
     <section id = '5'>
       <p>
