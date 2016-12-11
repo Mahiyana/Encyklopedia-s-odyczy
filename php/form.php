@@ -138,15 +138,15 @@
      ?>
  
       <p><?php
-      if ( $_POST["chocolate"] == "Gorzka" )
+      if ( strcmp($_POST["chocolate"], "Gorzka") == 0 )
            print( "Wiemy już, że lubisz gorzką czekoladę!" );
-      elseif ( $_POST["chocolate"] ==  "Mleczna" )
+      elseif (strcmp( $_POST["chocolate"], "Mleczna") == 0 )
            print( "Wiemy już, że lubisz mleczną czekoladę!" );
-      elseif ( $_POST["chocolate"] ==  "Deserowa" )
+      elseif ( strcmp($_POST["chocolate"],"Deserowa") == 0 )
            print( "Wiemy już, że lubisz deserową czekoladę!" );
-      elseif ( $_POST["chocolate"] ==  "Nie mogę jeść czekolady z powodów medycznych" )
+      elseif ( strcmp($_POST["chocolate"], "Nie mogę jeść czekolady z powodów medycznych") == 0 )
            print( "Wyrażamy wielkie wyrazy smutku, że nie możesz jeść czekolady :( Ale nie martw się! Są też inne słodycze! W naszej encyklopedii znajdziesz ich mnóstwo :)" );
-      elseif ( $_POST["chocolate"] ==  "Nie lubię w ogóle czekolady" )
+      elseif ( strcmp($_POST["chocolate"], "Nie lubię w ogóle czekolady") == 0 )
            print( "Jak można nie lubić czekolady?" );
       ?> </p>
 
