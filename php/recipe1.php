@@ -54,9 +54,9 @@
 			<h2>Składniki: </h2>
 			<?php
 				define("HUMAN_KCAL_A_DAY", 2000);
-				$ingredients_names = array("masło", "cukier", "mąka", "maliny");
-				$ingredients_weight = array("150 g", "200 g", "260 g", "40 g");
-				$ingredients_kcalper100 = array("700 kcal", "400 kcal", "450 kcal", "50 kcal");
+				$ingredients_names = array("masło", "cukier", "mąka pszenna", "maliny");
+				$ingredients_weight = array("150 g", "200 g (1 szklanka)", "260 g (2 szklanki)", "40 g (18 sztuk)");
+				$ingredients_kcalper100 = array("700 kcal", "400 kcal", "343 kcal", "50 kcal");
 				$ingredients_kcal;
 				$amount_of_ingredients = count($ingredients_names);
 			

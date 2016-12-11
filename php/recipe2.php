@@ -52,37 +52,58 @@
 		<br>
 		<section id ='ingredients_section'>
 			<h2>Składniki: </h2>
+			<?php
+				define("HUMAN_KCAL_A_DAY", 2000);
+				$ingredients_names = array("mleko", "mąka pszenna", "jajka", "cukier waniliowy", "sól");
+				$ingredients_weight = array("230 g (1 szklanka)", "130 g (1 szklanka)", "130 g (2 sztuki)", "12 g (3 łyżeczki)", "1 g (1 szczypta)");
+				$ingredients_kcalper100 = array("47 kcal", "343 kcal", "139 kcal", "394 kcal", "0 kcal");
+				$ingredients_kcal;
+				$amount_of_ingredients = count($ingredients_names);
 			
+			?>
 				<table id='ingredients'>
-					<tr>
+				<?php
+					echo '<tr> 
 						<th>Nazwa Składnika</th>
 						<th>Potrzebna Ilość</th>
-					</tr>
-					<tr>
-						<td>mleko</td>
-						<td>1 szklanki</td>
-					</tr>
-					<tr>
-						<td>mąka pszenna</td>
-						<td>1 szklanka</td>
-					</tr>
-					<tr>
-						<td>mąka pszenna</td>
-						<td>2 szklanki</td>
-					</tr>
-					<tr>
-						<td>jajka</td>
-						<td>2 sztuki</td>
-					</tr>
-					<tr>
-						<td>cukier waniliowy</td>
-						<td>1 łyżka</td>
-					</tr>
-					<tr>
-						<td>sól</td>
-						<td>1 szczypta</td>
-					</tr>
+						<th>Kcal / ilość produktu</th>
+						<th>Suma kcal</th>
+					</tr>';
+					for ($i = 0; $i < $amount_of_ingredients; $i++)
+					{
+						echo'<tr>';
+						echo'<td>' . $ingredients_names[$i] . '</td>';
+						echo'<td>' . $ingredients_weight[$i] . '</td>';
+						echo'<td>' . $ingredients_kcalper100[$i] . ' / 100 g</td>';
+						$ingredients_kcal[$i] = intval($ingredients_weight[$i]) * intval($ingredients_kcalper100[$i]) / 100;
+						echo'<td>' . $ingredients_kcal[$i] . '</td>';
+						echo'</tr>';
+					}
+					$kcal_sum = 0;
+					for ($i = 0; $i < $amount_of_ingredients; $i++)
+					{
+						$kcal_sum = $kcal_sum + $ingredients_kcal[$i];
+					}
+					echo'<tr>';
+					echo'<td colspan="3"></td>';
+					$kcal_in_total = "Razem: ";
+					$kcal_in_total = $kcal_in_total . (string) $kcal_sum;
+					echo'<td>' . $kcal_in_total . ' </td>';
+					?>
 				</table>
+				<?php
+					echo'<br>';
+					echo'Ludzkie średnie zapotrzebowanie kaloryczne (na dzień) wynosi ' . HUMAN_KCAL_A_DAY . ' kcal.';
+					echo'<br>';
+					if ($kcal_sum > HUMAN_KCAL_A_DAY)
+					{
+						echo'Co znaczy, że nie powinieneś/nie powinnaś jednego dnia zjeść tego, co przygotowałeś/aś w tym przepisie. Przykro nam :<';
+					}
+					else
+					{
+						echo'Co znaczy, że możesz bez przeszkód jednego dnia zjeść wszystko co właśnie przygotowałeś/aś! Hura!';
+					}
+				?>
 			
 		</section>
 		<br/><br/>
