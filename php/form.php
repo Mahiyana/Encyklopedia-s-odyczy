@@ -118,11 +118,12 @@
        
       <h1>Ankieta dla fanów słodyczy</h1>
       
+	 <?php $start_time = $_SERVER['REQUEST_TIME_FLOAT'];?>
 	 <?php
 		if ( strcmp($_POST["chocolate"], "Nie lubię w ogóle czekolady") == 0 )
            die( "Jak można nie lubić czekolady?" );
 	 ?>
-	  
+	 
      <?php 
         $welcome = "Witaj ";
         if(empty(trim($_POST["name"])) || trim($_POST["name"]) == "" )
@@ -134,7 +135,7 @@
         $welcome = $welcome . "! Dziękujemy za wypełnienie ankiety!";
         print($welcome);
      ?>
-	 
+
 	 <?php
 		$user_telephone;
 		echo'<br>';
@@ -225,6 +226,12 @@
       print("<p>Dodatkowo napisałeś nam następującą wiadomość: <p>");
       print("<p>" .  $_POST["more"] . "</p>");
      ?>
+
+
+	<?php $end_time = microtime(true);
+      $whole_time = round(($end_time - $start_time) * 1000000);
+      print("<p> Ogarnięcie tej ankiety zajęło naszemu serwerowi tylko " .  $whole_time . " µs!</p>");
+    ?>
     </div>
 	</div>
     </div>
