@@ -129,6 +129,44 @@
         $welcome = $welcome . "! Dziękujemy za wypełnienie ankiety!";
         print($welcome);
      ?>
+	 
+	 <?php
+		$user_telephone;
+		echo'<br>';
+		echo'<br>';
+		if(empty(trim($_POST["telephone"])) || trim($_POST["telephone"]) == "")
+		{
+			$user_telephone = "";
+			echo "Nie podałeś/aś nam niestety swojego numeru telefonu więc nie jesteśmy w stanie do Ciebie zadzwonić w razie słodyczowej niejasności.";
+		}
+		else
+		{
+			$user_telephone = $_POST["telephone"];
+			echo "Podałeś nam swój numer telefonu i oto on: " . $user_telephone;
+			echo "<br>";
+			if (preg_match("/^[0-9]{3}-[0-9]{3}-[0-9]{3}$/",$user_telephone))
+			{
+				echo "Co więcej, podany przez ciebie numer telefonu jest w dokładnie takiej formie, w jakiej prosiłyśmy(###-###-###)! Brawo!";
+			}
+			else
+			{
+				echo "Jednak podany przez ciebie numer telefonu nie jest w takiej formie, w jakiej prosiłyśmy(###-###-###) :<<";
+				echo "<br>";
+				echo "Jeżeli zamiast myślników wpisałeś/aś spacje, to spróbujemy to naprawić!";
+				echo "<br>";
+				$user_telephone = preg_replace('/\s+/', '-', $user_telephone);
+				if (preg_match("/^[0-9]{3}-[0-9]{3}-[0-9]{3}$/",$user_telephone))
+				{
+					echo "Udało się! Twój numer telefonu (" . $user_telephone . ") pasuje teraz do naszego wzoru!";
+				}
+				else
+				{
+					echo "Nie udało się! Twój numer telefonu (" . $user_telephone . ") nadal nie pasuje do naszego wzoru. Jeżeli chcesz, byśmy mogły się z tobą skontaktować to niestety nie będzie to możliwe. :<";
+				}
+			}
+			
+		}
+	 ?>
      
       <?php 
         if(empty(trim($_POST["chocolate"])) || trim($_POST["chocolate"]) == "" )

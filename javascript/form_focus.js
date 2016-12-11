@@ -17,6 +17,15 @@ function give_focuses(){
   function nick_blur(){
       document.getElementById("nick_help").style.display = "none";
     }
+	
+	document.getElementById("telephone").addEventListener("focus", telephone_focus);
+  function telephone_focus(){
+      document.getElementById("telephone_help").style.display = "block";
+    }
+  document.getElementById("telephone").addEventListener("blur", telephone_blur);
+  function telephone_blur(){
+      document.getElementById("telephone_help").style.display = "none";
+    }
   
   document.getElementById("else").addEventListener("focus", else_focus);
   function else_focus(){
