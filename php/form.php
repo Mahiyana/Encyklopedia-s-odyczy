@@ -175,7 +175,7 @@
       if(empty($_POST["marka_czekolady"]))
         print("Nie podzieliłeś się z nami Twoją ulubioną marką czekolady :(");
       else 
-       print( "Twoja ulubiona marka czekolady to " . $_POST["marka_czekolady"] ); 
+       print( "Twoja ulubiona marka czekolady to " . $_POST["marka_czekolady"][0] ); 
    ?></p>
    
     <?php 
