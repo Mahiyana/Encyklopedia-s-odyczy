@@ -122,7 +122,7 @@
       <p>Witaj drogi czytelniku! Chcialibyśmy poznać bliżej Twoje słodkie zainteresowania dlatego ładnie prosimy o wypełnienie ankiety </p>
       <p id="form_count"></p>
 
-      <form method="post" action="ankietka.html" id="whole_form">
+      <form method="post" action="../php/form.php" id="whole_form">
     <section id = '2'>
       <p><label>Imię:
         <input name ="name" type = "text" size="25" id="name"> 
@@ -150,22 +150,22 @@
     <section id = '4'>
 	<section id = '4MK'>
       <p><strong>Które cukierki z Mieszanki Krakowskiej lubisz?</strong>
-        <label>Pomarańczowe<input name="mieszanka_krakowska" type="checkbox" value="orange"></label>
-        <label>Ananasowe<input name="mieszanka_krakowska" type="checkbox" value="pineapple"></label>
-        <label>Cytrynowe<input name="mieszanka_krakowska" type="checkbox" value="lemon"></label>
-        <label>Malinowe<input name="mieszanka_krakowska" type="checkbox" value="raspberry"></label>
+        <label>Pomarańczowe<input name="mieszanka_krakowska[]" type="checkbox" value="pomarańczowe"></label>
+        <label>Ananasowe<input name="mieszanka_krakowska[]" type="checkbox" value="ananasowe"></label>
+        <label>Cytrynowe<input name="mieszanka_krakowska[]" type="checkbox" value="cytrynowe"></label>
+        <label>Malinowe<input name="mieszanka_krakowska[]" type="checkbox" value="malinowe"></label>
       </p>
 	</section>
 	<section id = '4M'>
       <p><strong>Gdybyś miał wybrać jedną markę spośród wymienionych to co byś wybrał</strong>
-        <label>Wedel<input name="marka_czekolady" type="radio" value="wedel"></label>
-        <label>Wawel<input name="marka_czekolady" type="radio" value="wawel"></label>
-        <label>Goplana<input name="marka_czekolady" type="radio" value="goplana"></label>
-        <label>Biedronka<input name="marka_czekolady" type="radio" value="biedronka"></label>
+        <label>Wedel<input name="marka_czekolady[]" type="radio" value="Wedel"></label>
+        <label>Wawel<input name="marka_czekolady[]" type="radio" value="Wawel"></label>
+        <label>Goplana<input name="marka_czekolady[]" type="radio" value="Goplana"></label>
+        <label>Biedronka<input name="marka_czekolady[]" type="radio" value="Biedronka"></label>
       </p>
 	</section>
       <p><label>Masz coś jeszcze do dodania? Nie krępuj się :)
-        <textarea name="more" rows="5" cols="50" id="else"> </textarea></label></p>
+        <textarea name="more" rows="5" cols="50" id="else"></textarea></label></p>
         <div class="help" id="else_help">Naprawdę możesz się z nami tym podzielić :D</div>
     </section>
     <section id = '5'>
