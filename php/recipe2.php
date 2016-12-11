@@ -20,7 +20,7 @@
 		<table id='menu_header_table'>
 			<tr>
 				<td><a href = '../html/index.html'>Strona główna</a></td>
-				<td><a href = '../html/recipes.html'>Przepisy</a></td>
+				<td><a href = '../php/recipes.php'>Przepisy</a></td>
 				<td><a href = '../html/history.html'>Historia</a></td>
 			</tr>
 		</table>
@@ -29,15 +29,16 @@
 	<div class="box">
 	<div id="menu_list">
 	<table id='menu_list_table'>
-		<tr>
-			<td><a href = 'recipe1.php'>Babeczki z malinami</a></td>
-		</tr>
-		<tr>
-			<td><a href = 'recipe2.php'>Naleśniki waniliowe</a></td>
-		</tr>
-		<tr>
-			<td>przepis3</td>
-		</tr>
+    <?php
+     $links = array(
+        'Babeczki z malinami'   => '../php/recipe1.php',
+        'Naleśniki waniliowe'   => '../php/recipe2.php',
+      ); 
+
+      foreach ($links as $key => $value) {
+        print("<tr><td><a href ='" . $value . "'>" . $key . "</a></td></tr>");
+      }
+    ?>
 	</table>
 	</div>
 	<div class="contents_rhombus">
