@@ -153,24 +153,26 @@
 
      
     <p><?php
-      $mk =  $_POST["mieszanka_krakowska"];
-      $ans = "";
-      if (count($mk) == 0)
-        $ans =  "Wygląda na to, że nie lubisz mieszanki Krakowskiej :<";
-      elseif (count($mk) == 1)
-        $ans = "Wygląda na to, że lubisz jeden rodzaj cukierków z mieszanki Krakowskiej i są to " . $mk[0];
-      elseif (count($mk) == 2)
-        $ans =  "Wygląda na to, że lubisz dwa rodzaje cukierków z mieszanki Krakowskiej i są to " . $mk[0] . " i " . $mk[1];
-      elseif (count($mk) == 3)
-        $ans =  "Wygląda na to, że lubisz dwa rodzaje cukierków z mieszanki Krakowskiej i są to " . $mk[0] . ", " . $mk[1] . " i " . $mk[2] ;
-      elseif (count($mk) == 4)
-        $ans = "Wygląda na to, że lubisz całą mieszankę Krakowska!";
+	  $ans = "";
+	  if(empty($_POST["mieszanka_krakowska"]))
+	    $ans =  "Wygląda na to, że nie lubisz mieszanki Krakowskiej :<";  
+	  else {
+	    $mk =  $_POST["mieszanka_krakowska"];
+        if (count($mk) == 1)
+          $ans = "Wygląda na to, że lubisz jeden rodzaj cukierków z mieszanki Krakowskiej i są to " . $mk[0];
+        elseif (count($mk) == 2)
+          $ans =  "Wygląda na to, że lubisz dwa rodzaje cukierków z mieszanki Krakowskiej i są to " . $mk[0] . " i " . $mk[1];
+        elseif (count($mk) == 3)
+          $ans =  "Wygląda na to, że lubisz dwa rodzaje cukierków z mieszanki Krakowskiej i są to " . $mk[0] . ", " . $mk[1] . " i " . $mk[2] ;
+        elseif (count($mk) == 4)
+		  $ans = "Wygląda na to, że lubisz całą mieszankę Krakowska!";
+	  }
       print($ans);
     ?></p>
 
 
     <p><?php 
-      if($_POST["marka_czekolady"] == "")
+      if(empty($_POST["marka_czekolady"]))
         print("Nie podzieliłeś się z nami Twoją ulubioną marką czekolady :(");
       else 
        print( "Twoja ulubiona marka czekolady to " . $_POST["marka_czekolady"] ); 
