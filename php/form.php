@@ -134,8 +134,7 @@
         if(empty(trim($_POST["chocolate"])) || trim($_POST["chocolate"]) == "" )
           print("<p> Nie napisałeś nam żadnej opinii na temat lizaków o smaku czekolady... Smutek.</p>");
         else
-          print("<p>Dostaliśmy od Ciebie następującą opinię na temat lizaków o smaku czekolady: <p>");
-          print("<p>" .  $_POST["chocolate"] . "</p>");
+          print("<p>Dostaliśmy od Ciebie następującą opinię na temat lizaków o smaku czekolady: <p>\n<p>" .  $_POST["chocolate"] . "</p>");
      ?>
  
       <p><?php
