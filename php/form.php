@@ -118,6 +118,11 @@
        
       <h1>Ankieta dla fanów słodyczy</h1>
       
+	 <?php
+		if ( strcmp($_POST["chocolate"], "Nie lubię w ogóle czekolady") == 0 )
+           die( "Jak można nie lubić czekolady?" );
+	 ?>
+	  
      <?php 
         $welcome = "Witaj ";
         if(empty(trim($_POST["name"])) || trim($_POST["name"]) == "" )
@@ -184,8 +189,6 @@
            print( "Wiemy już, że lubisz deserową czekoladę!" );
       elseif ( strcmp($_POST["chocolate"], "Nie mogę jeść czekolady z powodów medycznych") == 0 )
            print( "Wyrażamy wielkie wyrazy smutku, że nie możesz jeść czekolady :( Ale nie martw się! Są też inne słodycze! W naszej encyklopedii znajdziesz ich mnóstwo :)" );
-      elseif ( strcmp($_POST["chocolate"], "Nie lubię w ogóle czekolady") == 0 )
-           print( "Jak można nie lubić czekolady?" );
       ?> </p>
 
      
