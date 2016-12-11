@@ -22,9 +22,9 @@
 	<p id='title'> Encyklopedia Słodyczy</p>
 		<table id='menu_header_table'>
 			<tr>
-				<td><a href = 'index.html'>Strona główna</a></td>
-				<td><a href = 'recipes.html'>Przepisy</a></td>
-				<td><a href = 'history.html'>Historia</a></td>
+				<td><a href = '../html/index.html'>Strona główna</a></td>
+				<td><a href = '../html/recipes.html'>Przepisy</a></td>
+				<td><a href = '../html/history.html'>Historia</a></td>
 			</tr>
 		</table>
     </nav>
