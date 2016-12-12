@@ -11,15 +11,15 @@
 	width: 185px;
 	text-align: left;
 }
-#ingredients td
-{
-	background-color: white;
-}
 #ingredients th
 {
 	background-color: #ffadf6;
 }
-#ingredients td:hover
+#ingredients tr
+{
+	background-color: white;
+}
+#ingredients tr:hover
 {
 	background-color: #ffc6f9;
 }
