@@ -23,7 +23,7 @@
 		<table id='menu_header_table'>
 			<tr>
 				<td><a href = '../html/index.html'>Strona główna</a></td>
-				<td><a href = '../html/recipes.html'>Przepisy</a></td>
+				<td><a href = '../php/recipes.php'>Przepisy</a></td>
 				<td><a href = '../html/history.html'>Historia</a></td>
 			</tr>
 		</table>
