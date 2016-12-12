@@ -45,7 +45,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td><a href='../html/skarmel.html'>Karmel</a></td>
+			<td><a href='../html/karmel.html'>Karmel</a></td>
 		</tr>
 		<tr>
 			<td>
