@@ -80,7 +80,7 @@ a:visited
 {
 	position: relative;
 	background-color: white;
-	width: 230px;
+	flex: 0 0 230px;
 	height: 130%;
 	border: 5px solid #ffadf6;
 	padding: 5px;
