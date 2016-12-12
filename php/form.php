@@ -35,7 +35,7 @@
 		<tr>
 			<td>
 				<details>
-				<summary><a href = 'sweet_chocolate.html'>Czekolada</a></summary>
+				<summary><a href = '../html/sweet_chocolate.html'>Czekolada</a></summary>
 				<ul>
 				<li>Mleczna</li>
 				<li>Biała</li>
@@ -45,12 +45,12 @@
 			</td>
 		</tr>
 		<tr>
-			<td><a href='karmel.html'>Karmel</a></td>
+			<td><a href='../html/skarmel.html'>Karmel</a></td>
 		</tr>
 		<tr>
 			<td>
 				<details>
-				<summary><a href='lizaki.html'>Lizaki</a></summary>
+				<summary><a href='../html/lizaki.html'>Lizaki</a></summary>
 				<ul>
 				<li>Wodne</li>
 				<li>Mleczne</li>
@@ -61,7 +61,7 @@
 		<tr>
 			<td>
 				<details>
-				<summary><a href='lody.html'>Lody</a></summary>
+				<summary><a href='../html/lody.html'>Lody</a></summary>
 				<ul>
 				<li>Wodne</li>
 				<li>Mleczne</li>
@@ -72,7 +72,7 @@
 		<tr>
 			<td>
 				<details>
-				<summary><a href='ciastka.html'>Ciastka</a></summary>
+				<summary><a href='../html/ciastka.html'>Ciastka</a></summary>
 				<ul>
 				<li>Pszenne</li>
 				<li>Owsiane</li>
@@ -83,7 +83,7 @@
 		<tr>
 			<td>
 				<details>
-				<summary><a href='zelki.html'>Żelki</a></summary>
+				<summary><a href='../html/zelki.html'>Żelki</a></summary>
 				<ul>
 				<li>Zwykłe</li>
 				<li>Kwaśne</li>
@@ -93,18 +93,18 @@
 			</td>
 		</tr>
 		<tr>
-			<td><a href='miod.html'>Miód</a></td>
+			<td><a href='../html/miod.html'>Miód</a></td>
 		</tr>
 		<tr>
-			<td><a href='cukier.html'>Cukier</a></td>
+			<td><a href='../html/cukier.html'>Cukier</a></td>
 		</tr>
 		<tr>
-			<td><a href='krowki.html'>Krówki</a></td>
+			<td><a href='../html/krowki.html'>Krówki</a></td>
 		</tr>
 		<tr>
 			<td>
 				<details>
-				<summary><a href='rurki.html'>Rurki</a></summary>
+				<summary><a href='../html/rurki.html'>Rurki</a></summary>
 				<ul>
 				<li>Z kremem</li>
 				<li>W czekoladzie</li>
