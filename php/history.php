@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-
+<?php
+$cookie_background_pattern = 'background_pattern';
+$cookie_background_value = 'background_value';
+?>
 <html>
 
   <head>
@@ -26,7 +29,7 @@
 			<tr>
 				<td><a href = '../html/index.html'>Strona główna</a></td>
 				<td><a href = '../php/recipes.php'>Przepisy</a></td>
-				<td><a href = '../html/history.html'>Historia</a></td>
+				<td><a href = '../php/history.php'>Historia</a></td>
 			</tr>
 		</table>
     </nav>
@@ -48,7 +51,17 @@
 		</tr>
 	</table>
 	</div>
-	<div class="contents_star" id="background_box">
+	<div class=
+		<?php
+			if(isset($_COOKIE[$cookie_background_pattern]))
+			{
+				echo $_COOKIE[$cookie_background_pattern];
+			}
+			else
+			{
+				echo "contents_star";
+			}
+		?> id="background_box">
 	<div id='history_box'>
 	<button id='bhide'>Ukryj</button>
     <div id="history_general" class="columns">

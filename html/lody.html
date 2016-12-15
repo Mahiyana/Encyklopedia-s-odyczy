@@ -21,7 +21,7 @@
 			<tr>
 				<td><a href = '../html/index.html'>Strona główna</a></td>
 				<td><a href = '../php/recipes.php'>Przepisy</a></td>
-				<td><a href = '../html/history.html'>Historia</a></td>
+				<td><a href = '../php/history.php'>Historia</a></td>
 			</tr>
 		</table>
     </nav>
