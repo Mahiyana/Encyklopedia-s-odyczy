@@ -75,7 +75,6 @@ W ascetycznym średniowieczu nie było zbyt wiele miejsca na słodkości. Ale w 
 	<input type="radio" name="hfont" id='ravi'> Ravi Prakash <br>
 	<input type="radio" name="hfont" id='arial'> Arial <br>
 	<input type="radio" name="hfont" id='times'> Times New Roman (Domyślna) <br>
-	<button id='history_font_btn'>Zatwierdź</button>
   </div>
    </div>
    <br/>
