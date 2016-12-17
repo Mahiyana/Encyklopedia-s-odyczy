@@ -3,6 +3,8 @@
 $cookie_background_pattern = 'background_pattern';
 $cookie_background_value = 'background_value';
 $cookie_text_font = 'text_font';
+$cookie_times_visited = 'times_visited';
+setcookie($cookie_times_visited, 1, time() + (86400 * 30), "/");
 ?>
 <html>
 
@@ -64,6 +66,18 @@ $cookie_text_font = 'text_font';
 			}
 		?> id="background_box">
 	<div id='history_box'>
+	<?php
+		if (isset($_COOKIE['times_visited']))
+		{
+			$times_vis = $_COOKIE[$cookie_times_visited] + 1;
+			setcookie($cookie_times_visited, $times_vis, time() + (86400 * 30), "/");
+			echo "<p> Odwiedziles ta strone juz " . $times_vis . " razy!</p>";
+		}
+		else
+		{
+			echo "<p> Odwiedziles ta strone dopiero pierwszy raz!</p>";
+		}
+	?>
 	<button id='bhide'>Ukryj</button>
     <div id="history_general" class="columns">
     <p id='history_info' class=
