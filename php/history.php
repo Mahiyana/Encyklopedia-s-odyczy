@@ -37,36 +37,8 @@ setcookie($cookie_text_font, $chosen_font, time() + (86400 * 30), "/");
   </head>
 
   <body onload = "knowMore(); background_rotation(); history_hide_show(); history_font_choice();">
-       <div class='background'>
-	<div id='menu_header' class='absolute'>
-	<nav>
-	<p id='title'> Encyklopedia Słodyczy</p>
-		<table id='menu_header_table'>
-			<tr>
-				<td><a href = '../html/index.html'>Strona główna</a></td>
-				<td><a href = '../php/recipes.php'>Przepisy</a></td>
-				<td><a href = '../php/history.php'>Historia</a></td>
-			</tr>
-		</table>
-    </nav>
-	</div>
-	<div class="box">
-	<div id="menu_list">
-	<table id='menu_list_table'>
-		<tr>
-			<td><a href = 'history_aztecs.html'>Aztekowie</a></td>
-		</tr>
-		<tr>
-			<td><a href = 'history_chinese.html'>Chińczycy</a></td>
-		</tr>
-		<tr>
-			<td><a href = 'history_egyptians.html'>Egipcjanie</a></td>
-		</tr>
-		<tr>
-			<td><a href = 'history_romans.html'>Rzymianie</a></td>
-		</tr>
-	</table>
-	</div>
+  <?php require 'header.php';
+         require 'history_menu.php'?>
 	<div class=
 		<?php
 			if(isset($_COOKIE[$cookie_background_pattern]))

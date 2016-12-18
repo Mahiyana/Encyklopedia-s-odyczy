@@ -12,37 +12,10 @@
   </head>
 
   <body>
-       <div class='background'>
-	<div id='menu_header' class='absolute'>
-	<nav>
-	<p id='title'> Encyklopedia Słodyczy</p>
-		<table id='menu_header_table'>
-			<tr>
-				<td><a href = '../html/index.html'>Strona główna</a></td>
-				<td><a href = '../php/recipes.php'>Przepisy</a></td>
-				<td><a href = '../php/history.php'>Historia</a></td>
-			</tr>
-		</table>
-    </nav>
-	</div>
-	<div class="box">
-	<div id="menu_list">
-		<table id='menu_list_table'>
-		<tr>
-			<td><a href = 'history_aztecs.html'>Aztekowie</a></td>
-		</tr>
-		<tr>
-			<td><a href = 'history_chinese.html'>Chińczycy</a></td>
-		</tr>
-		<tr>
-			<td><a href = 'history_egyptians.html'>Egipcjanie</a></td>
-		</tr>
-		<tr>
-			<td><a href = 'history_romans.html'>Rzymianie</a></td>
-		</tr>
-	</table>
-	</div>
-	<div class="contents_star">
+    <?php require 'header.php';
+          require 'history_menu.php' ?>
+
+    <div class="contents_star">
 	<h1>Egipcjanie</h1>
 	<div class='contents_box'>
 	Ci ludzie od piramid is sławienia kotów. Okazuje się, że zajmowali się też produkcją słodyczy.

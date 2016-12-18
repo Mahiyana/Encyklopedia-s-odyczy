@@ -15,136 +15,14 @@
  </head>
   
   <body onload = "weekday(); link_counter();">
-  <?php
-  print_r($_POST);
-  $accounts = array(
-    'maja' => 'haslomai',
-    'roza' => 'haslorozy',
-  );
-  session_start();
-  $username=trim($_POST['login']);
-  $password=trim($_POST['password']);
-  
-  if(($accounts[$username] == $password) && !empty($_POST['login']) && !empty($_POST['password']) ){
-    $_SESSION['logged']=$username;
-    header("Location: profile.php");
-  }
-  ?>
-    <div class='background'>
-	<div id='menu_header' class='absolute'>
-	<nav>
-	<p id='title'> Encyklopedia Słodyczy</p>
-		<table id='menu_header_table'>
-			<tr>
-				<td><a href = '../html/index.html'>Strona główna</a></td>
-				<td><a href = '../php/recipes.php'>Przepisy</a></td>
-				<td><a href = '../php/history.php'>Historia</a></td>
-			</tr>
-		</table>
-    </nav>
-	</div>
-    <div class="box">
-	<div onmouseover='menu_mouseover()' onmouseout='menu_mouseout()' id="menu_list">
-	<table id='menu_list_table'>
-		<tr>
-			<td>
-				<details>
-				<summary><a href = 'sweet_chocolate.html'>Czekolada</a></summary>
-				<ul>
-				<li>Mleczna</li>
-				<li>Biała</li>
-				<li>Gorzka</li>
-				</ul>
-				</details>
-			</td>
-		</tr>
-		<tr>
-			<td><a href='karmel.html'>Karmel</a></td>
-		</tr>
-		<tr>
-			<td>
-				<details>
-				<summary><a href='lizaki.html'>Lizaki</a></summary>
-				<ul>
-				<li>Wodne</li>
-				<li>Mleczne</li>
-				</ul>
-				</details>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<details>
-				<summary><a href='lody.html'>Lody</a></summary>
-				<ul>
-				<li>Wodne</li>
-				<li>Mleczne</li>
-				</ul>
-				</details>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<details>
-				<summary><a href='ciastka.html'>Ciastka</a></summary>
-				<ul>
-				<li>Pszenne</li>
-				<li>Owsiane</li>
-				</ul>
-				</details>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<details>
-				<summary><a href='zelki.html'>Żelki</a></summary>
-				<ul>
-				<li>Zwykłe</li>
-				<li>Kwaśne</li>
-				<li>Z pianką mleczną</li>
-				</ul>
-				</details>
-			</td>
-		</tr>
-		<tr>
-			<td><a href='miod.html'>Miód</a></td>
-		</tr>
-		<tr>
-			<td><a href='cukier.html'>Cukier</a></td>
-		</tr>
-		<tr>
-			<td><a href='krowki.html'>Krówki</a></td>
-		</tr>
-		<tr>
-			<td>
-				<details>
-				<summary><a href='rurki.html'>Rurki</a></summary>
-				<ul>
-				<li>Z kremem</li>
-				<li>W czekoladzie</li>
-				</ul>
-				</details>
-			</td>
-		</tr>
-	</table>
-   
-    <p>Zły login lub hasło</p>
-    <form method="post" action="../php/index.php">
-     <p><label>Login:
-        <input name ="login" type = "text" size="25" id="login">
-     <p><label>Hasło:
-        <input name ="password" type = "password" size="25" id="password">
-     <p><input type="submit" value="Zaloguj"></p>   
-    </form>
-	
-   	</div>
-
+  <?php require 'header.php';
+        require 'sweet_menu.php';?>
 	<div class="contents_plain">
     <img src='../pictures/pralinka.png'  class='image_rotate' alt='Przykład samotnej pralinki'><h1 id='powitanie'>Witaj w naszej Encyklopedii Słodyczy</h1>
     <p id='index_info'>Tutaj będzie encyklopedia słodyczy. I będzie ona przepyszna!</p>
     <h1 id="welcome">Moje H1</h1>
 
-    <a href="../html/ankietka.html">Nasza ankieta powróciła! Wypełnij ją już dziś!</a>
+    <a href="../php/ankietka.php">Nasza ankieta powróciła! Wypełnij ją już dziś!</a>
 
     <p id='link_count'>:)</p>
     <p id='anchor_count'>:)</p>

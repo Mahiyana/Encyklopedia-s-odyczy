@@ -14,37 +14,10 @@
 	<script type="application/javascript" src="../javascript/recipes_question.js"></script>
   </head>
 	<body onload="recipes_mouseover(); window_resize(); recipes_question();">
-   <div class='background'>
-	<div id='menu_header' class='absolute'>
-	<nav>
-	<p id='title'> Encyklopedia Słodyczy</p>
-		<table id='menu_header_table'>
-			<tr>
-				<td><a href = '../html/index.html'>Strona główna</a></td>
-				<td><a href = '..php/recipes.php'>Przepisy</a></td>
-				<td><a href = '../php/history.php'>Historia</a></td>
-			</tr>
-		</table>
-    </nav>
-	</div>
-	<div class="box">
-	<div id="menu_list">
-	<table id='menu_list_table'>
-    
-    <?php
-     $links = array(
-        'Babeczki z malinami'   => '../php/recipe1.php',
-        'Naleśniki waniliowe'   => '../php/recipe2.php',
-      ); 
+	  <?php require 'header.php';
+              require 'recipes_menu.php'?>
 
-      foreach ($links as $key => $value) {
-        print("<tr><td><a href ='" . $value . "'>" . $key . "</a></td></tr>");
-      }
-    ?>
-
-	</table>
-	</div>
-	<div class="contents_rhombus">
+    <div class="contents_rhombus">
 	<div class='border_image'>
 	<p id="recipeInfo">Słodycze można też zrobić w domu! Po lewej znajdziecie listę przepisów nadesłanych przez czytelników naszej strony. (Jak chcecie więcej to nadsyłajcie na encyklopedia@słodyczy.pl)</p>
     </div>
