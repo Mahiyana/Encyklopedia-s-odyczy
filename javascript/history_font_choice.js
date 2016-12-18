@@ -8,7 +8,6 @@ function history_font_choice()
 	var radio3 = document.getElementById('times');
 	radio3.onclick = timesFont;
 	var current_font_cookie = getTextFont();
-	console.log(current_font_cookie);
 	switch (current_font_cookie)
 	{
 		case 'font_ravi':
@@ -28,22 +27,14 @@ function history_font_choice()
 	function raviFont()
 	{
 		info.className = 'font_ravi';
-		setTextFontCookie('font_ravi');
 	}
 	function arialFont()
 	{
 		info.className = 'font_arial';
-		setTextFontCookie('font_arial');
 	}
 	function timesFont()
 	{
 		info.className = 'font_times';
-		setTextFontCookie('font_times');
-	}
-	
-	function setTextFontCookie(textFontName)
-	{
-		document.cookie = 'text_font=' + textFontName + ';' + ('expires=' + ((new Date()).getTime() + 3600)) + ";path=/";
 	}
 	
 	function getCookie(cname)
