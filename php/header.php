@@ -4,18 +4,20 @@
     'roza' => 'haslorozy',
   );
   session_start();
-  $username=trim($_POST['login']);
-  $password=trim($_POST['password']);
-  
-  if(($accounts[$username] == $password) && !empty($_POST['login']) && !empty($_POST['password']) ){
-    $_SESSION['logged']=$username;
-    header("Location: profile.php");
-  }  
-  else{
-     if(!empty($_POST['login']) || !empty($_POST['password']) ){
-     print("<p>Zły login i/lub hasło</p>");
-     }
-  }
+  if(isset($_POST['login']) && isset($_POST['password'])){
+    $username=trim($_POST['login']);
+    $password=trim($_POST['password']);
+   
+      if((array_key_exists($username, $accounts) && $accounts[$username] == $password) && !empty($_POST['login']) && !empty($_POST['password']) ){
+        $_SESSION['logged']=$username;
+        header("Location: profile.php");
+      }  
+      else{
+         if(!empty($_POST['login']) || !empty($_POST['password']) ){
+         print("<p>Zły login i/lub hasło</p>");
+         }
+      }
+    }
 
   if(isset($_POST['logout'])){
     unset($_SESSION['logged']);

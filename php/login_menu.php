@@ -1,6 +1,25 @@
 <?php
   if(!isset($_SESSION['logged'])){
-  ?>
+  $accounts = array(
+    'maja' => 'haslomai',
+    'roza' => 'haslorozy',
+  );
+  session_start();
+  if(isset($_POST['login']) && isset($_POST['password'])){
+    $username=trim($_POST['login']);
+    $password=trim($_POST['password']);
+   
+      if((array_key_exists($username, $accounts) && $accounts[$username] == $password) && !empty($_POST['login']) && !empty($_POST['password']) ){
+         print("");
+      }  
+      else{
+         if(!empty($_POST['login']) || !empty($_POST['password']) ){
+         print("<p>Zły login i/lub hasło</p>");
+         }
+      }
+    }
+
+?>
     
     <form method="post" action="">
      <p><label>Login:
