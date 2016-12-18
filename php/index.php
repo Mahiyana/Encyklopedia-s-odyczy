@@ -20,7 +20,6 @@
 	<div class="contents_plain">
     <img src='../pictures/pralinka.png'  class='image_rotate' alt='Przykład samotnej pralinki'><h1 id='powitanie'>Witaj w naszej Encyklopedii Słodyczy</h1>
     <p id='index_info'>Tutaj będzie encyklopedia słodyczy. I będzie ona przepyszna!</p>
-    <h1 id="welcome">Moje H1</h1>
 
     <a href="../php/ankietka.php">Nasza ankieta powróciła! Wypełnij ją już dziś!</a>
 

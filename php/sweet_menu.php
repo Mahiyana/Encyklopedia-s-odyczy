@@ -1,18 +1,4 @@
-  <?php
-  $accounts = array(
-    'maja' => 'haslomai',
-    'roza' => 'haslorozy',
-  );
-  session_start();
-  $username=trim($_POST['login']);
-  $password=trim($_POST['password']);
-  
-  if(($accounts[$username] == $password) && !empty($_POST['login']) && !empty($_POST['password']) ){
-    $_SESSION['logged']=$username;
-    header("Location: profile.php");
-  }
-  ?>
-    <div class="box">
+      <div class="box">
 	<div onmouseover='menu_mouseover()' onmouseout='menu_mouseout()' id="menu_list">
 	<table id='menu_list_table'>
 		<tr>
@@ -96,15 +82,6 @@
 			</td>
 		</tr>
 	</table>
-   
-    <p>Zły login lub hasło</p>
-    <form method="post" action="../php/index.php">
-     <p><label>Login:
-        <input name ="login" type = "text" size="25" id="login">
-     <p><label>Hasło:
-        <input name ="password" type = "password" size="25" id="password">
-     <p><input type="submit" value="Zaloguj"></p>   
-    </form>
-	
-   	</div>
+    <?php require 'login_menu.php'; ?>   
+  	</div>
 
