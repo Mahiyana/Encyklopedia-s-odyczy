@@ -81,7 +81,6 @@
 				</details>
 			</td>
 		</tr>
-	</table>
-    <?php require 'login_menu.php'; ?>   
+	</table> 
   	</div>
 

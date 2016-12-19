@@ -26,7 +26,8 @@
   }
   ?>
 <div class='background'>
-	<div id='menu_header' class='absolute'>
+<div class = 'box'>
+	<div id='menu_header'>
 	<nav>
 	<p id='title'> Encyklopedia Słodyczy</p>
 		<table id='menu_header_table'>
@@ -43,4 +44,10 @@ if(isset($_SESSION['logged'])){
 			</tr>
 		</table>
     </nav>
-  </div>  
+  </div>
+  <div id='menu_header_login'>
+  <?php
+  require "login_menu.php";
+  ?>
+  </div>
+</div>  
