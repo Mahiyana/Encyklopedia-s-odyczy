@@ -32,7 +32,10 @@
     </form>
 	
   <?php }
-  else{ ?>
+  else{ 
+  echo "<p> Witaj " . $_SESSION['logged'] . "!</p>";
+  
+  ?>
   
     <form method="post" action="">
     <input type="hidden" name="logout" value="logout">
