@@ -29,12 +29,16 @@ function background_rotation()
 	
 	function setBackgroundCookie(backgroundClassName)
 	{
-		document.cookie = 'background_pattern=' + backgroundClassName + ';' + ('expires=' + ((new Date()).getTime() + 3600)) + ";path=/";
+		var exp_date = new Date();
+		exp_date.setFullYear(exp_date.getFullYear() + 1);
+		document.cookie = 'background_pattern=' + backgroundClassName + ';' + ('expires=' + exp_date.toUTCString()) + ";path=/";
 	}
 	
 	function setBackgroundValue(backgroundValue)
 	{
-		document.cookie = 'background_value=' + backgroundValue + ';' + ('expires=' + ((new Date()).getTime() + 3600)) + ";path=/";
+		var exp_date = new Date();
+		exp_date.setFullYear(exp_date.getFullYear() + 1);
+		document.cookie = 'background_value=' + backgroundValue + ';' + ('expires=' + exp_date.toUTCString()) + ";path=/";
 	}
 	
 	function getCookie(cname)
