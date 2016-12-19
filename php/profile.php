@@ -21,7 +21,9 @@
     <img src='../pictures/pralinka.png'  class='image_rotate' alt='Przykład samotnej pralinki'><h1 id='powitanie'>Witaj w naszej Encyklopedii Słodyczy</h1>
 
     <?php
-      session_start();
+   if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+    }
       if(isset($_SESSION["logged"])){
         if(trim($_SESSION["logged"]) == "maja"){ ?>
           <p>Dumna adminka Maja</p> 

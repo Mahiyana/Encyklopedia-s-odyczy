@@ -3,10 +3,9 @@
     'maja' => 'haslomai',
     'roza' => 'haslorozy',
   );
-  if (session_status() == PHP_SESSION_NONE) {
+ if (session_status() == PHP_SESSION_NONE) {
     session_start();
-    }
-  if(isset($_POST['login']) && isset($_POST['password'])){
+    }  if(isset($_POST['login']) && isset($_POST['password'])){
     $username=trim($_POST['login']);
     $password=trim($_POST['password']);
    
