@@ -1,30 +1,46 @@
 <?php
-  $accounts = array(
-    'maja' => 'haslomai',
-    'roza' => 'haslorozy',
-  );
- if (session_status() == PHP_SESSION_NONE) {
+if(!isset($_SESSION['logged'])){
+  if (session_status() == PHP_SESSION_NONE) {
     session_start();
-    }  if(isset($_POST['login']) && isset($_POST['password'])){
+    }
+  if(isset($_POST['login']) && isset($_POST['password'])){
     $username=trim($_POST['login']);
     $password=trim($_POST['password']);
-   
-      if((array_key_exists($username, $accounts) && $accounts[$username] == $password) && !empty($_POST['login']) && !empty($_POST['password']) ){
+     
+
+    $servername = "localhost";
+    $username_server = "root";
+    $password_server = "pass";
+    $db_name = "ency";
+
+    $handle = new mysqli($servername, $username_server, $password_server);
+    $found = mysqli_select_db($handle, $dbname);
+    if($found){
+      $conn = new mysqli($servername, $username_server, $password_server, $dbname);
+      
+      if($conn->connect_error){
+        die("Coś poszło nie tak z połączeniem, a konkretnie: " . $conn->connect_error);
+      }
+      
+      $sql = "SELECT ID FROM users WHERE login = '$username' and password = '$password'";
+      $result = $conn->query($sql);
+      if($result->num_rows == 1){
         $_SESSION['logged']=$username;
         header("Location: profile.php");
-      }  
-      else{
-         if(!empty($_POST['login']) || !empty($_POST['password']) ){
-         print("<p>Zły login i/lub hasło</p>");
-         }
+      }else{
+        echo "<p>Zły login i/lub hasło</p>";
       }
-    }
 
-  if(isset($_POST['logout'])){
+    }
+  }
+}  
+if(isset($_POST['logout'])){
     unset($_SESSION['logged']);
     header("Location: index.php");
-  }
-  ?>
+}
+
+?>
+
 <div class='background'>
 <div class = 'box'>
 	<div id='menu_header'>
