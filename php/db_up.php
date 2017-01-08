@@ -39,7 +39,7 @@ email VARCHAR(50) NOT NULL,
 date TIMESTAMP
 );";
 if ($conn->query($sql3) === TRUE){
-  echo "Tabela zostały dodane do bazy danych!<br/>";
+  echo "Tabela została dodana do bazy danych!<br/>";
 }else{
   die("Coś nie wyszło z dodawaniem tabeli do bazy danych bazy danych, a konkretnie: " . $conn->error);
 }
