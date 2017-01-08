@@ -16,8 +16,8 @@
   <?php require 'header.php'?>
 	<div class="contents_plain">
 	<h1> Rejestracja</h1>
-	<h3> Rejestracja zakonczona sukcesem!</h2>
-	Mozesz sie teraz zalogowac uzywajac podanych nam informacji!
+	<?php require 'db_reg_edit.php'?>	
+	
 
     </div>
 	</div>
