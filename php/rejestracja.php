@@ -16,7 +16,7 @@
   <body onload='set_button();'>
   <?php require 'header.php'?>
 	<div class="contents_plain">
-	<h1> Rejestracja</h1>
+	<h1>Rejestracja</h1>
 	<form method='post' id='reg_form' action='../php/registration_success.php'>
 	<p>Login: <text id='login_err'></text>
 	<br>
