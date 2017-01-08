@@ -27,11 +27,13 @@
       if(isset($_SESSION["logged"])){
         if(trim($_SESSION["logged"]) == "maja"){ ?>
           <p>Dumna adminka Maja</p> 
+		  <p><a href="../php/panel_administratora.php"><button type="button">Przejdz do panelu administratora</button></a></p>
           <img src ='../pictures/pszczolka.jpe' alt='pszczółka'>
         <?php  
         }
         else if(trim($_SESSION["logged"]) == "roza"){ ?>
           <p>Dumna adminka Róża</p> 
+		  <p><a href="../php/panel_administratora.php"><button type="button">Przejdz do panelu administratora</button></a></p>
           <img src ='../pictures/roza.jpg' alt='różyczka'>
         <?php  
         }

@@ -1,4 +1,5 @@
 <?php
+echo "<p><a href='../php/index.php'><button type='button'>Wroc do strony glownej</button></a></p>";
 echo "<p><a href='db_up.php'>Przywróć bazę danych do stanu początkowego</a><p>";
 echo "<p><a href='db_down.php'>Wywal wszystko D:</a></p>";
 
