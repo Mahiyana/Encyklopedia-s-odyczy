@@ -43,6 +43,7 @@
         <input name ="password" type = "password" size="25" id="password"></p>
      <p><input type="submit" value="Zaloguj"></p>   
     </form>
+	<p><a href="../php/rejestracja.php"><button type="button">Nie masz konta? Zarejestruj sie!</button></a></p>
 	
   <?php }
   else{ 
