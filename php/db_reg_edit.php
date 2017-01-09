@@ -129,6 +129,7 @@ else
 	{
 		die("Cos nie wyszlo z edytowaniem twoim danych a konkretnie: " . $conn->error);
 	}
+	$_SESSION["logged"] = $new_login;
 }
 
 $conn->close();

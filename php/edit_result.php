@@ -17,7 +17,6 @@
 	<div class="contents_plain">
 	<h1> Edycja danych</h1>
 	<?php require 'db_reg_edit.php'?>
-	<?php session_destroy(); ?>
 	
 
     </div>
