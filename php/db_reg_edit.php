@@ -25,19 +25,6 @@ $regpassword = $_POST["regpassword"];
 $repregpassword = $_POST["repregpassword"];
 $regname = $_POST["regname"];
 $regemail = $_POST["regemail"];
-$sql = "SELECT * FROM users WHERE login='" . trim($reglogin) . "'";
-$result = $conn->query($sql);
-if ($result->num_rows > 0)
-{
-	die("Podany login juz istnieje w bazie danych.");
-}
-
-$sql = "SELECT * FROM users WHERE email='" . trim($regemail) . "'";
-$result = $conn->query($sql);
-if ($result->num_rows > 0)
-{
-	die("Podany email juz istnieje w bazie danych.");
-}
 if (strlen($reglogin)>30)
 {
 	die("Login jest zbyt dlugi. Nie mozna tak nie przez formularz ;<");
@@ -54,15 +41,9 @@ if (strlen($regemail)>30)
 {
 	die("Email jest zbyt dlugi. Nie mozna tak nie przez formularz ;<");
 }
-if (!isset($_SESSION["logged"]))
-{
 if (empty(trim($reglogin)) || trim($reglogin) == "")
 {
 	die("Twoj login jest niepoprawny.");
-}
-if (empty(trim($regpassword)) || trim($regpassword) == "" || trim($regpassword) != trim($repregpassword))
-{
-	die("Twoje haslo jest niepoprawne.");
 }
 if (empty(trim($regname)) || trim($regname) == "")
 {
@@ -71,6 +52,24 @@ if (empty(trim($regname)) || trim($regname) == "")
 if (empty(trim($regemail)) || trim($regemail) == "")
 {
 	die("Twoj email jest niepoprawny.");
+}
+if (!isset($_SESSION["logged"]))
+{
+$sql = "SELECT * FROM users WHERE login='" . trim($reglogin) . "'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0)
+{
+	die("Podany login juz istnieje w bazie danych.");
+}
+$sql = "SELECT * FROM users WHERE email='" . trim($regemail) . "'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0)
+{
+	die("Podany email juz istnieje w bazie danych.");
+}
+if (empty(trim($regpassword)) || trim($regpassword) == "" || trim($regpassword) != trim($repregpassword))
+{
+	die("Twoje haslo jest niepoprawne.");
 }
 	$sql4 = "INSERT INTO users (login, password, name, email) VALUES ('" . $reglogin . "', '" . $regpassword . "', '" . $regname . "', '" . $regemail . "');";
 if ($conn->query($sql4) === TRUE){
@@ -88,13 +87,26 @@ else
 	$old_password = $row['password'];
 	$old_name = $row['name'];
 	$old_email = $row['email'];
-	if (empty(trim($reglogin)) || trim($reglogin) == "")
+	$new_login = $reglogin;
+	$new_name = $regname;
+	$new_email = $regemail;
+	$sql = "SELECT * FROM users WHERE login='" . trim($reglogin) . "'";
+	$result = $conn->query($sql);
+	if ($result->num_rows > 0)
 	{
-		$new_login = $old_login;
+		if (trim($reglogin) != $old_login)
+		{
+			die("Podany login juz istnieje w bazie danych.");
+		}
 	}
-	else
+	$sql = "SELECT * FROM users WHERE email='" . trim($regemail) . "'";
+	$result = $conn->query($sql);
+	if ($result->num_rows > 0)
 	{
-		$new_login = $reglogin;
+		if (trim($regemail) != $old_email)
+		{
+			die("Podany email juz istnieje w bazie danych.");
+		}
 	}
 	if (empty(trim($regpassword)) || trim($regpassword) == "")
 	{
@@ -103,22 +115,6 @@ else
 	else
 	{
 		$new_password = $regpassword;
-	}
-	if (empty(trim($regname)) || trim($regname) == "")
-	{
-		$new_name = $old_name;
-	}
-	else
-	{
-		$new_name = $regname;
-	}
-	if (empty(trim($regemail)) || trim($regemail) == "")
-	{
-		$new_email = $old_email;
-	}
-	else
-	{
-		$new_email = $regemail;
 	}
 	$sql = "UPDATE users SET login='" . $new_login . "', password='" . $new_password . "', name='" . $new_name . "', email='" . $new_email . "' WHERE login='" . trim($_SESSION["logged"]) . "';";
 	if ($conn->query($sql) === TRUE)

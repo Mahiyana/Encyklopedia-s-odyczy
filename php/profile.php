@@ -42,31 +42,7 @@
 			<?php require '../php/db_load_data.php'; ?>
 			<h2>Profil uzytkownika</h2>
 			<h3>Tutaj mozesz edytowac swoje dane.</h3>
-			<p>Twoj login: <?php echo "'" . trim($_SESSION["logged"]) . "'" ?></p>
-			<p>Twoje imie: <?php echo "'" . $curr_name . "'"?></p>
-			<p>Twoj email: <?php echo "'" . $curr_email . "'"?></p>
-			<p>Data zalozenia konta: <?php echo $account_date ?></p>
-			<br>
-			<br>
-			<form method='post' id='reg_form' action='../php/edit_success.php'>
-			<p>Nowy login: 
-			<br>
-			<input name ="reglogin" type = "text" size="60" maxlength='30' id="reglogin"></p>
-			<p>Nowe haslo: <text id='password_err'></text>
-			<br>
-			<input name ="regpassword" type = "password" size="60" maxlength='30' id="regpassword"></p>
-			<p>Powtorz nowe haslo: <text id='reppassword_err'></text>
-			<br>
-			<input name ="repregpassword" type = "password" size="60" maxlength='30' id="repregpassword"></p>
-			<p>Nowe imie:
-			<br>
-			<input name ="regname" type = "text" size="60" maxlength='30' id="regname"></p>
-			<p>Email:
-			<br>
-			<input name ="regemail" type = "text" size="60" maxlength='50' id="regemail"></p>
-			<p><button type="button" id='regbutton'>Akceptuj zmiany</button></p>
-			<p>(Puste pole oznacza brak zmiany danego pola)</p>			
-			</form>
+			<?php require '../php/data_form_generator.php' ?>
 		<?php
 		}
       }
