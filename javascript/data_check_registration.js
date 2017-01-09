@@ -54,12 +54,31 @@ function check_data()
 	}
 	else
 	{
-		document.getElementById("email_err").innerHTML="";
+		if (!validateEmail(email))
+		{
+			document.getElementById("email_err").innerHTML="Niepoprawny email!";
+			correct = false;
+		}
+		else
+		{
+			document.getElementById("email_err").innerHTML="";
+		}
 	}
 	if (correct)
 	{
 		document.getElementById("reg_form").submit();
 	}
+}
+
+function validateEmail(email)
+{
+    var atpos = email.indexOf("@");
+    var dotpos = email.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length)
+	{
+        return false;
+    }
+	return true;
 }
 
 
