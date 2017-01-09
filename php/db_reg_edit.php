@@ -53,6 +53,10 @@ if (empty(trim($regemail)) || trim($regemail) == "")
 {
 	die("Twoj email jest niepoprawny.");
 }
+if (!preg_match('/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/',trim($regemail)))
+	{
+		die("Twoj email jest niepoprawny.");
+	}
 if (!isset($_SESSION["logged"]))
 {
 $sql = "SELECT * FROM users WHERE login='" . trim($reglogin) . "'";
