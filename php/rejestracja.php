@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/layout.css">
 	<link rel="stylesheet" type="text/css" href="../css/text_registration.css">
     <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
-	<script type="application/javascript" src="../javascript/registration_send.js"></script>	
+	<script type="application/javascript" src="../javascript/data_check_registration.js"></script>	
   </head>
   
   <body onload='set_button();'>

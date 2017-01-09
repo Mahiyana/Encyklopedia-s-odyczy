@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/text_registration.css">
     <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
 	<script type="application/javascript" src="../javascript/index_menu_list_mouse_movement.js"></script>
-	<script type="application/javascript" src="../javascript/profile_edit.js"></script>
+	<script type="application/javascript" src="../javascript/data_check_profile_edit.js"></script>
  </head>
   
   <body onload = "set_button();">

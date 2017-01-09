@@ -1,7 +1,7 @@
 <?php
 if (!isset($_SESSION["logged"]))
 {
-	echo "<form method='post' id='reg_form' action='../php/registration_success.php'>";
+	echo "<form method='post' id='reg_form' action='../php/registration_result.php'>";
 	echo "<p>Login: <text id='login_err'></text>";
 	echo "<br>";
 	echo "<input name ='reglogin' type = 'text' size='60' maxlength='30' id='reglogin'></p>";
@@ -22,7 +22,7 @@ if (!isset($_SESSION["logged"]))
 }
 else
 {
-	echo "<form method='post' id='reg_form' action='../php/edit_success.php'>";
+	echo "<form method='post' id='reg_form' action='../php/edit_result.php'>";
 	echo "<p>Login: <text id='login_err'></text>";
 	echo "<br>";
 	echo "<input name ='reglogin' type = 'text' size='60' maxlength='30' id='reglogin' value='" . trim($_SESSION['logged']) . "'></p>";
